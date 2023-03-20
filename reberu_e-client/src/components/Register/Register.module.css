@@ -1,0 +1,151 @@
+
+.divBody{
+    height: 100vh;
+    width: 100vw;
+    background: linear-gradient(to right, #99004d 0%, #ff0080 100%);
+}
+
+.registerBody {
+  font-family: 'Ubuntu', sans-serif;
+  background: url('https://besthqwallpapers.com/Uploads/9-6-2022/198693/mount-fuji-4k-japanese-maple-fujiyama-evening.jpg') no-repeat;
+  background-size: cover;
+  width: 80%;
+  height: 100vh;
+  margin: 0;
+  overflow: hidden;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 0%);
+}
+
+.main-container {
+  width: 500px;
+  margin: 0 auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.signup-form {
+  background: url('http://static1.squarespace.com/static/58fd82dbbf629ab224f81b68/598ef5d4914e6bba68a6eb35/5fb75a6eda47fc7bdff559f6/1656648849858/Shirahige-Shinto-Shrine-FB.jpg?format=1500w')
+    no-repeat;
+  background-size: cover;
+  border-radius: 10px;
+}
+
+.sign-back {
+  background: linear-gradient(rgb(253, 40, 23, 0.6), #c1dbfe 95%);
+  border-radius: 10px;
+  padding: 65px 0;
+}
+
+.sign-back h1 {
+  text-transform: uppercase;
+  text-align: center;
+  color: #fff;
+  margin-top: 0;
+  letter-spacing: 5px;
+  text-shadow: 1px 1px 1px #333;
+}
+
+.signup-row {
+  text-align: center;
+  margin: 20px 0;
+  position: relative;
+}
+
+.signup-row input {
+  padding: 5px 0;
+  border: 0;
+  border-bottom: 1px solid #fff;
+  background: transparent;
+  width: 50%;
+  text-align: center;
+  outline: none;
+  color: #fff;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+.signup-row input::-webkit-input-placeholder {
+  color: #fff;
+  text-shadow: 1px 1px 1px rgba(51, 51, 51, 0.6);
+}
+
+.signup-row i {
+  color: #fff;
+  position: relative;
+  left: 20px;
+  text-shadow: 1px 1px 1px rgba(51, 51, 51, 0.6);
+}
+
+.signup-row a {
+  font-size: 40px;
+  text-decoration: none;
+}
+
+.signup-row a i {
+  left: 0;
+}
+
+.form-bottom {
+  display: flex;
+  justify-content: center;
+}
+
+.remember:not(:last-child) {
+  margin-right: 30px;
+  color: #af942d;
+}
+.remember:not(:last-child):hover {
+  margin-right: 30px;
+  color: #fff;
+  transition: all 500ms;
+}
+
+.remember a {
+  text-decoration: none;
+  color: #af942d;
+  transition: all 500ms;
+}
+.remember a:hover {
+  text-decoration: none;
+  color: #fff;
+}
+
+input[type='checkbox'] {
+  position: relative;
+  top: 1px;
+  transition: all 500ms;
+}
+
+.main-container .input-box {
+    text-align: center;
+    margin: 20px 0;
+    position: relative;
+}
+.main-container .input-box input[type="submit"]{
+    padding: 5px 0;
+    border: 0;
+    border-bottom: 1px solid #fff;
+    background: transparent;
+    width: 50%;
+    text-align: center;
+    outline: none;
+    color: #fff;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+
+.main-container .input-box input[type="submit"]{
+    background: linear-gradient(to right, #99004d 0%, #ff0080 100%);
+    font-size: 17px;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  .main-container .input-box input[type="submit"]:hover{
+    letter-spacing: 1px;
+    background: linear-gradient(to left, #99004d 0%, #ff0080 100%);
+  }
