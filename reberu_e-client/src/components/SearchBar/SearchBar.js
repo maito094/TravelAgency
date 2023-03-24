@@ -1,11 +1,20 @@
+import {useEffect, useState } from 'react'
+import DatePicker from "react-datepicker";
+import "react-datepicker/dist/react-datepicker.css";
+import {addDays,subDays, addYears, differenceInDays} from 'date-fns';
+
 export const SearchBar = () => {
+
+    const [startDate, setStartDate] = useState(new Date());
+    const [endDate, setEndDate] = useState(addDays(new Date(), 10));
+
   return (
     <div className="tm-section tm-bg-img" id="tm-section-1">
       <div className="tm-bg-white ie-container-width-fix-2">
         <div className="container ie-h-align-center-fix">
           <div className="row">
             <div className="col-xs-12 ml-auto mr-auto ie-container-width-fix">
-              <form action="index.html" method="get" className="tm-search-form tm-section-pad-2">
+              <form action="" method="get" className="tm-search-form tm-section-pad-2">
                 <div className="form-row tm-search-form-row">
                   <div className="form-group tm-form-element tm-form-element-100">
                     <i className="fa fa-map-marker fa-2x tm-form-element-icon"></i>
@@ -13,14 +22,15 @@ export const SearchBar = () => {
                     <input name="city" type="text" className="form-control" id="inputCity" placeholder="Type your destination..." />
                   </div>
                   <div className="form-group tm-form-element tm-form-element-50">
-                    <i className="fa fa-calendar fa-2x tm-form-element-icon"></i>
                     <label htmlFor="check-in">Check in:</label>
-                    <input name="check-in" type="text" className="form-control" id="inputCheckIn" placeholder="Check In" />
+                    <DatePicker name="check-in" type="text" className="form-control" id="inputCheckIn" placeholder="Check In" selected={startDate} onChange={(date) => setStartDate(date)} minDate={subDays(new Date(), 0)} dateFormat="MMMM d, yyyy"/>
+                    <i className="fa fa-calendar fa-2x tm-form-element-icon"></i>
+                    
                   </div>
                   <div className="form-group tm-form-element tm-form-element-50">
-                    <i className="fa fa-calendar fa-2x tm-form-element-icon"></i>
                     <label htmlFor="check-out">Check out:</label>
-                    <input name="check-out" type="text" className="form-control" id="inputCheckOut" placeholder="Check Out" />
+                    <DatePicker name="check-out" type="text" className="form-control" id="inputCheckOut" placeholder="Check Out" selected={endDate} onChange={(date) => setEndDate(date)} maxDate={addYears(new Date(), 1)} dateFormat="MMMM d, yyyy" />
+                    <i className="fa fa-calendar fa-2x tm-form-element-icon"></i>
                   </div>
                 </div>
                 <div className="form-row tm-search-form-row">
