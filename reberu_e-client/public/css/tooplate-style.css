@@ -199,12 +199,12 @@ p {
 .tm-form-element-icon {
 	color: #ee5057;
 	position: absolute;
-	top: 10px;
+	top: 35px;
 	left: 15px;
 }
 
 .tm-form-element-icon-small {
-	top: 16px;
+	top: 45px;
 	left: 18px;
 }
 
@@ -447,6 +447,11 @@ video {
    height: 0;
    clear: both;
 }
+
+
+/* label{
+	display: block;
+} */
 
 @media screen and (max-width: 991px) {
 	.tm-top-bar.active, .tm-top-bar, .tm-top-bar-bg { height: 65px; }
