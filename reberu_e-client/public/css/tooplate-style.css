@@ -5,6 +5,9 @@ Template 2095 Level
 http://www.tooplate.com/view/2095-level
 
 */
+html {
+	scroll-behavior: smooth;
+  }
 
 body {
 	font-family: 'Open Sans', Helvetica, Arial, sans-serif;
@@ -235,8 +238,13 @@ select.tm-select::-ms-expand { display: none; }
 
 .tm-search-form .tm-form-element { width: 33.3333%; }
 .tm-search-form .tm-form-element-2 { width: 25%; }
-.tm-search-form-row { width: 900px; }
-.tm-btn-search { width: 100%; }
+.tm-search-form-row { 
+	width: 900px; 
+	align-items: flex-end;
+}
+.tm-btn-search { 
+	width: 100%;
+ }
 
 /* https://css-tricks.com/creating-non-rectangular-headers/ */
 .tm-section-down-arrow {
@@ -449,10 +457,6 @@ video {
 }
 
 
-/* label{
-	display: block;
-} */
-
 @media screen and (max-width: 991px) {
 	.tm-top-bar.active, .tm-top-bar, .tm-top-bar-bg { height: 65px; }
 	.tm-top-bar.active .navbar-expand-lg .navbar-nav .nav-link,
@@ -478,7 +482,8 @@ video {
 	.tm-search-form-row { width: 98%; max-width: 900px; }
 	.tm-recommended-container { margin-top: 30px; }
 
-	video {
+
+	.tmVideo {
 		top: 25%;
 		left: 0;
 	    min-width: 50%;
@@ -486,15 +491,21 @@ video {
 	    width: auto;
 	    height: auto;	 
 	}
+
 }
 
 @media screen and (max-width: 767px) {
+
+	
 	.tm-search-form .tm-form-element {
+
 		width: 50%;
 		max-width: 235px;
 	}
 
 	#tm-section-1 {
+		margin-top: 50px;
+
 		padding-left: 15px;
 		padding-right: 15px;
 	}
@@ -538,6 +549,13 @@ video {
 }
 
 @media screen and (max-width: 524px) {
+
+	#tm-section-1{
+		height: 800px;
+		padding: 15px;
+	}
+
+
 	.tm-section-pad-2 { padding: 20px 25px; }
 
 	.tm-search-form .tm-form-element {
@@ -547,7 +565,6 @@ video {
 
 	.tm-fx-col-xs { flex-direction: column; }
 	.tm-section-pad { padding: 25px 15px; }
-	#tm-section-1 { height: 600px; }
 }
 
 /* IE Fixes */
