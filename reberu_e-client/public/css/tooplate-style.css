@@ -483,15 +483,6 @@ video {
 	.tm-recommended-container { margin-top: 30px; }
 
 
-	.tmVideo {
-		top: 25%;
-		left: 0;
-	    min-width: 50%;
-	    min-height: 50%;
-	    width: auto;
-	    height: auto;	 
-	}
-
 }
 
 @media screen and (max-width: 767px) {
