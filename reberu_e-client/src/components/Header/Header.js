@@ -1,6 +1,20 @@
 
 export const Header = ()=>{
 
+  const showCollapseMenu =(e)=>{
+
+    let navbar = e.currentTarget.parentNode.querySelector("#mainNav");
+
+    if (navbar.classList.contains("collapse")) {
+      
+      navbar.classList.remove("collapse");
+    }
+    else{
+      navbar.classList.add("collapse");
+
+    }
+  }
+
     return   ( 
     <div className="tm-top-bar" id="tm-top-bar">
       <div className="container">
@@ -11,6 +25,7 @@ export const Header = ()=>{
               Level
             </a>
             <button
+            onClick={showCollapseMenu}
               type="button"
               id="nav-toggle"
               className="navbar-toggler collapsed"
