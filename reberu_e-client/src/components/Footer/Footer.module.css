@@ -1,5 +1,15 @@
-.footer{
-    position: fixed;
-    bottom: 0;
-    width: 100%;
+.stickyArrow {
+  position: fixed;
+  left: 25px;
+  bottom: 50px;
+  font-size: 40px;
+  z-index: 100;
+}
+.stickyArrow:hover {
+  font-size: 60px;
+  transition: font-size 0.2s;
+}
+
+.stickyArrow i {
+  color: #f0656a;
 }
