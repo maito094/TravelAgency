@@ -5,7 +5,7 @@ export const Login = () => {
     <div className={styles.divBody}>
       <div className={styles.loginBody}>
         <div className={styles.container}>
-          <form action="#">
+          <form action="GET">
             <div className={styles.title}>Login</div>
             <div className={styles['input-box']}>
               <input type="text" placeholder="Enter Your Email" required />
@@ -22,12 +22,12 @@ export const Login = () => {
           <div className={styles.option}>or Connect With Social Media</div>
           <div className={styles.twitter}>
             <a href="#">
-              <i class="fa fa-twitter-square" aria-hidden="true"></i>Sign in With Twitter
+              <i className="fa fa-twitter-square" aria-hidden="true"></i>Sign in With Twitter
             </a>
           </div>
           <div className={styles.facebook}>
             <a href="#">
-              <i class="fa fa-facebook-square" aria-hidden="true"></i>Sign in With Facebook
+              <i className="fa fa-facebook-square" aria-hidden="true"></i>Sign in With Facebook
             </a>
           </div>
         </div>
