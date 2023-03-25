@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 
 export const Header = ()=>{
 
@@ -20,10 +21,10 @@ export const Header = ()=>{
       <div className="container">
         <div className="row">
           <nav className="navbar navbar-expand-lg narbar-light">
-            <a className="navbar-brand mr-auto" href="#">
+            <Link className="navbar-brand mr-auto" to="/">
               <img src="img/logo.png" alt="Site logo" />
               Level
-            </a>
+            </Link>
             <button
             onClick={showCollapseMenu}
               type="button"
@@ -39,24 +40,24 @@ export const Header = ()=>{
             <div id="mainNav" className="collapse navbar-collapse tm-bg-white">
               <ul className="navbar-nav ml-auto">
                 <li className="nav-item">
-                  <a className="nav-link" href="#top">
+                  <Link className="nav-link" to="/">
                     Home <span className="sr-only">\(current\)</span>
-                  </a>
+                  </Link>
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link" href="#tm-section-4">
+                  <Link className="nav-link" to="/portfolio">
                     Portfolio
-                  </a>
+                  </Link>
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link" href="#tm-section-5">
+                  <Link className="nav-link" to="/blogs">
                     Blog Entries
-                  </a>
+                  </Link>
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link" href="#tm-section-6">
+                  <Link className="nav-link" to="/contact-us">
                     Contact Us
-                  </a>
+                  </Link>
                 </li>
               </ul>
             </div>
