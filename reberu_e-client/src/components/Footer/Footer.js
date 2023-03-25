@@ -1,3 +1,5 @@
+import { useEffect } from 'react';
+import { useLocation} from 'react-router-dom';
 import styles from '../Footer/Footer.module.css';
 
 export const Footer = () => {
@@ -12,14 +14,16 @@ export const Footer = () => {
     })
   };
 
+  let location = useLocation();
 
   return (
+
     <footer className={`tm-bg-dark-blue`}>
-      <div className={`${styles.stickyArrow}`}>
-        <a href="#" onClick={onClickScrollHome}>
-          <i className={`fa fa-chevron-circle-up `}></i>
-        </a>
-      </div>
+     {location.pathname==='/' &&  <div className={`${styles.stickyArrow}`}>
+       <div onClick={onClickScrollHome}>
+         <i className={`fa fa-chevron-circle-up `}></i>
+       </div>
+     </div>}
       <div className="container">
         <div className="row">
           <p className="col-sm-12 text-center tm-font-light tm-color-white p-4 tm-margin-b-0">
