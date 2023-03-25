@@ -127,7 +127,7 @@ export const  Portfolio = () =>{
                   <a href="#" className="media tm-media tm-recommended-item">
                     <img src="img/tn-img-04.jpg" alt="Image" />
                     <div className="media-body tm-media-body tm-bg-gray">
-                      <h4 className="text-uppercase tm-font-semibold tm-sidebar-item-title">South America</h4>
+                      <h4 className="text-uppercase tm-font-semibold tm-sidebar-item-title">North America</h4>
                     </div>
                   </a>
                 </div>

@@ -1,0 +1,602 @@
+{
+  "3987279d-0ad4-4afb-8ca9-5b256ae3b298": {
+    "_ownerId": "35c62d76-8152-4626-8712-eeb96381bea8",
+    "title": "Grand Canyon National Park",
+    "description": "Vast and cinematic, this famed national park is an absolute showstopper, with bands of red rocks and carved canyon walls as far as the eye can see. No wonder it draws millions of visitors every year. But if you want solo time in nature, you’re in luck. The window of December to February gets only a sliver of summer’s peak crowds. Yes, it’s cold—highs tend to hover around 45 degrees—but this season has its own attractions, like seeing the Canyon’s walls dusted in snow. South Rim trails also stay open for the most part. One good bet: The Hermit Trail tends to stay relatively snow- and ice-free because of its lower elevation and sunlight exposure. Need another reason to come? January is also when the park’s historic photo studio, Kolb Studio, has its art exhibition and sale.",
+    "img": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/27/84/4e/38/caption.jpg?w=1400&h=-1&s=1",
+    "Do": [
+      {
+        "name": "Bright Angel Trail",
+        "img": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/27/84/4e/38/caption.jpg?w=1400&h=-1&s=1"
+      },
+      {
+        "name": "Historic Navajo Bridge",
+        "img": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0b/f8/98/46/navajo-bridge.jpg?w=800&h=600&s=1"
+      },
+      {
+        "name": "2-Day White Water Rafting Tour through the Grand Canyon from Las Vegas",
+        "img": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1a/5b/71/ed/caption.jpg?w=800&h=600&s=1"
+      }
+    ],
+    "Stay": [
+      {
+        "name": "Backland - Grand Canyon",
+        "img": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/21/93/06/51/exterior-view.jpg?w=800&h=-1&s=1"
+      },
+      {
+        "name": "Thunderbird Lodge",
+        "img": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/17/80/54/e4/room-with-a-rim-view.jpg?w=700&h=-1&s=1"
+      },
+      {
+        "name": "Bright Angel Lodge And Cabins",
+        "img": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/10/5e/c3/d3/bright-angel-lodge.jpg?w=800&h=600&s=1"
+      }
+    ],
+    "Eat": [
+      {
+        "name": "Bright Angel Bicycles and Cafe",
+        "img": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/07/53/a0/27/bright-angel-bicycles.jpg?w=800&h=600&s=1"
+      },
+      {
+        "name": "Desert View Trading Post",
+        "img": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0a/b6/ff/4e/indian-taco.jpg?w=800&h=600&s=1"
+      },
+      {
+        "name": "Grand Canyon Village Market & Deli",
+        "img": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1a/c6/fa/0e/img-20191224-163138-largejpg.jpg?w=800&h=-1&s=1"
+      }
+    ],
+    "Continent": "North America",
+    "_createdOn": 1613551279012
+  },
+  "35f08930-d99f-436f-b6ce-505e1b1aae7b": {
+    "_ownerId": "62314d41-66ca-4d0f-91a3-be0fd28997f4",
+    "title": "Niagara Falls",
+    "description": "Once a destination for honeymoons and family vacations, Niagara Falls has really stepped it up as an action-packed vacation spot. The falls are literally the biggest draw – watching the frothy water tumble at alarming speeds can be mesmerizing. Throw on a poncho and hop aboard the Maid of the Mist to cruise close enough to the falls to be drenched by spray. Hit the main strip of Clifton Hill for flashy tourist attractions and restaurants galore.",
+    "img": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1a/65/1e/80/caption.jpg?w=600&h=600&s=1",
+    "Do": [
+      {
+        "name": "Journey Behind the Falls",
+        "img": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0c/a0/71/1e/photo1jpg.jpg?w=800&h=-1&s=1"
+      },
+      {
+        "name": "Butterfly Conservatory",
+        "img": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0f/19/9b/62/flowers-and-stripped.jpg?w=800&h=-1&s=1"
+      },
+      {
+        "name": "Skylon Tower",
+        "img": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1c/21/55/50/skylon-tower-exterior.jpg?w=800&h=600&s=1"
+      }
+    ],
+    "Stay": [
+      {
+        "name": "The Rex Motel",
+        "img": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/06/8a/2b/b4/under-the-olive-tree-room-two-dou.jpg?w=800&h=600&s=1"
+      },
+      {
+        "name": "Sterling Inn & Spa",
+        "img": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/26/de/ce/9c/sterling-inn-spa.jpg?w=800&h=600&s=1"
+      },
+      {
+        "name": "Best Western Plus Cairn Croft Hotel",
+        "img": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/28/50/4b/b9/hotel-exteiror.jpg?w=800&h=600&s=1"
+      }
+    ],
+    "Eat": [
+      {
+        "name": "Prime Steakhouse Niagara Falls",
+        "img": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/26/61/25/60/featuring-premium-steaks.jpg?w=800&h=600&s=1"
+      },
+      {
+        "name": "AG Inspired Cuisine",
+        "img": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/01/a7/32/cb/beef-tenderloin.jpg?w=800&h=600&s=1"
+      },
+      {
+        "name": "Massimo's Italian Fallsview Restaurant",
+        "img": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/12/e8/75/c3/massimo-s-italian-fallsview.jpg?w=800&h=600&s=1"
+      }
+    ],
+    "Continent": "North America",
+    "_createdOn": 1613551279012
+  },
+  "1a0ef8a5-371d-40fe-9a53-0a68527b9b3c": {
+    "_ownerId": "62314d41-66ca-4d0f-91a3-be0fd28997f4",
+    "title": "Riviera Maya",
+    "description": "Starting from the fishing village of Puerto Morelos and rolling down to the biosphere reserve of Sian Ka'an, the Riviera Maya covers an impressive stretch of Caribbean coastline. It’s a jumping-off point for popular spots like Cancun, Tulum, Isla Mujeres, and Holbox Island—so no matter what you’re looking for, there’s a beach for every vibe. There’s plenty of sacred ruins and deep blue cenotes to explore, plus, the area’s diving and snorkeling are next-level, especially at Xcaret and the Puerto Morelos reef. Party people find that New Year’s Eve is just the opening act for a whole season of action—including February’s Carnival season, with parades and elaborate costumes that are always a draw. But there’s plenty for families too, like water parks, zoos, and beaches perfect for sand castle building.",
+    "img": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/27/84/48/8b/caption.jpg?w=1200&h=800&s=1&cx=621&cy=1236&chk=v1_ed7b2dd5413e8328d084",
+    "Do": [
+      {
+        "name": "Xcaret Amusement",
+        "img": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/08/9f/30/0a/excelentes-sitio-para.jpg?w=800&h=600&s=1"
+      },
+      {
+        "name": "Cenotes Dos Ojos",
+        "img": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/19/ba/c2/18/passaggio.jpg?w=800&h=600&s=1"
+      },
+      {
+        "name": "La Playa Xpuha",
+        "img": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/08/23/2b/90/la-playa-xpuha.jpg?w=800&h=600&s=1"
+      }
+    ],
+    "Stay": [
+      {
+        "name": "Rosewood Mayakoba",
+        "img": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/17/0f/72/b2/rosewood-mayakoba-s-punta.jpg?w=800&h=600&s=1"
+      },
+      {
+        "name": "Encantada Tulum",
+        "img": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1b/80/7c/90/encantada-tulum.jpg?w=800&h=600&s=1"
+      },
+      {
+        "name": "Akumal Bay Beach & Wellness Resort",
+        "img": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1b/8f/7f/9d/photo-by-our-friend-betty.jpg?w=800&h=600&s=1"
+      }
+    ],
+    "Eat": [
+      {
+        "name": "Osteria De Roma",
+        "img": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/18/18/75/a1/osteria-de-roma-restaurante.jpg?w=800&h=600&s=1"
+      },
+      {
+        "name": "Taboo Tulum",
+        "img": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1a/e2/88/ce/vista.jpg?w=800&h=-1&s=1"
+      },
+      {
+        "name": "Lola y Moya",
+        "img": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/15/2f/3e/74/molletes-con-tocino-pidelos.jpg?w=800&h=600&s=1"
+      }
+    ],
+    "Continent": "North America",
+    "_createdOn": 1613551279012
+  },
+  "4d7ca8d3-06ea-41da-85a6-b34e703f6515": {
+    "_ownerId": "7c010599-baa5-40fb-8092-bef5684d756e",
+    "title": "Marrakech",
+    "description": "Colorful souks, Moorish architecture, intimate gardens and boutique hotels--Marrakesh is unforgettable. Spend your days exploring the quiet courtyards and snaking alleyways of the historic Medina, walking through the serene Jardin Majorelle or taking in the beauty of the city’s mosques before ending the evening at a one-of-a-kind riad.",
+    "img": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1b/33/dd/8f/caption.jpg?w=1400&h=-1&s=1",
+    "Do": [
+      {
+        "name": "Bahia Palace",
+        "img": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/26/e2/c5/8f/palais-bahia.jpg?w=800&h=600&s=1"
+      },
+      {
+        "name": "Musée Yves Saint Laurent Marrakech",
+        "img": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1a/49/a6/fa/great-architecture-and.jpg?w=800&h=600&s=1"
+      },
+      {
+        "name": "Jardin Majorelle",
+        "img": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/17/4f/7f/06/20190418-125956-largejpg.jpg?w=800&h=600&s=1"
+      }
+    ],
+    "Stay": [
+      {
+        "name": "Mandarin Oriental, Marrakech",
+        "img": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/09/49/ad/d3/mandarin-oriental-marrakech.jpg?w=800&h=600&s=1"
+      },
+      {
+        "name": "La Mamounia Marrakech",
+        "img": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/21/83/f9/34/hotel-entrance.jpg?w=800&h=600&s=1"
+      },
+      {
+        "name": "Riad Siwan",
+        "img": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/11/31/35/6c/suite-khorbat.jpg?w=800&h=600&s=1"
+      }
+    ],
+    "Eat": [
+      {
+        "name": "Al Fassia Aguedal",
+        "img": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1a/2a/e0/b8/moroccan-salad.jpg?w=800&h=600&s=1"
+      },
+      {
+        "name": "Riad Kniza Restaurant",
+        "img": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0b/e5/3f/63/riad-kniza-restaurant.jpg?w=800&h=600&s=1"
+      },
+      {
+        "name": "Libzar",
+        "img": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/07/0a/87/c9/libzar.jpg?w=800&h=600&s=1"
+      }
+    ],
+    "Continent": "Africa",
+    "_createdOn": 1613551279012
+  },
+  "237d75ad-53e4-4414-9e95-7d477af60e6d": {
+    "_ownerId": "7c010599-baa5-40fb-8092-bef5684d756e",
+    "title": "Sharm El Sheikh",
+    "description": "Diverse marine life and hundreds of Red Sea coral reef sites make Sharm El Sheikh a magnet for divers and eco-tourists. The tourist economy of this Sinai Peninsula city has grown quite rapidly over the last few decades, resulting in an upcrop of first-class resorts and posh nightlife. The waters of Ras Mohamed National Park are abundant with schools of fish and, oddly, toilets – thanks to the bathroom fixtures being transported by a cargo ship that sank during a 1981 storm. ",
+    "img": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/15/33/fc/ed/sharm-el-sheikh.jpg?w=1400&h=900&s=1",
+    "Do": [
+      {
+        "name": "Ras Mohammed National Park",
+        "img": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/07/09/ef/8a/caption.jpg?w=800&h=600&s=1"
+      },
+      {
+        "name": "SOHO Square",
+        "img": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/01/89/12/8d/soho-s-dancing-fountain.jpg?w=800&h=600&s=1"
+      },
+      {
+        "name": "Shark's Bay Beach",
+        "img": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/05/e4/22/ac/shark-s-bay-beach.jpg?w=800&h=-1&s=1"
+      }
+    ],
+    "Stay": [
+      {
+        "name": "The Rex Motel",
+        "img": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1c/fe/07/c5/royal-savoy-hotel-and.jpg?w=800&h=600&s=1"
+      },
+      {
+        "name": "Steigenberger Alcazar",
+        "img": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/11/8d/47/e2/steigenberger-alcazar.jpg?w=800&h=600&s=1"
+      },
+      {
+        "name": "Rixos Sharm El Sheikh",
+        "img": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/26/1b/9f/23/pool-outdoor.jpg?w=800&h=600&s=1"
+      }
+    ],
+    "Eat": [
+      {
+        "name": "Fontana Bar",
+        "img": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/03/a5/e1/cb/getlstd-property-photo.jpg?w=600&h=500&s=1"
+      },
+      {
+        "name": "Cafe Chino",
+        "img": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/06/a6/d9/7c/cafe-chino.jpg?w=800&h=600&s=1"
+      },
+      {
+        "name": "The Queen Vic",
+        "img": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/03/c7/a6/26/beer-garden.jpg?w=800&h=600&s=1"
+      }
+    ],
+    "Continent": "Africa",
+    "_createdOn": 1613551279012
+  },
+  "a4760425-e7d2-47aa-a77b-bd1f43c6128e": {
+    "_ownerId": "7c010599-baa5-40fb-8092-bef5684d756e",
+    "title": "Cairo",
+    "description": "Cairo’s an ancient city that also happens to be a modern metropolis—it’s one of the biggest cities in the Middle East and has the traffic and noise issues to prove it. But as long as you’re not looking for solitude, Cairo—the City of the Thousand Minarets—is a splendid place to explore Egyptian history and culture.",
+    "img": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/03/9b/2f/5b/cairo.jpg?w=1100&h=800&s=1",
+    "Do": [
+      {
+        "name": "The Museum of Egyptian Antiquities",
+        "img": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/09/c2/7b/99/caption.jpg?w=800&h=600&s=1"
+      },
+      {
+        "name": "Nile River",
+        "img": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/16/45/28/df/river-nile-in-upper-lower.jpg?w=800&h=-1&s=1"
+      },
+      {
+        "name": "Coptic Cairo",
+        "img": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/13/b6/b1/91/20180715-180608-largejpg.jpg?w=800&h=600&s=1"
+      }
+    ],
+    "Stay": [
+      {
+        "name": "Triumph Plaza Hotel",
+        "img": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/23/69/8d/92/triumph-plaza-hotel.jpg?w=800&h=-1&s=1"
+      },
+      {
+        "name": "The St. Regis Cairo",
+        "img": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/24/9a/7b/9a/exterior.jpg?w=800&h=600&s=1"
+      },
+      {
+        "name": "Kempinski Nile Hotel Cairo",
+        "img": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/15/22/b7/80/rooftop-pool-during-sunset.jpg?w=800&h=600&s=1"
+      }
+    ],
+    "Eat": [
+      {
+        "name": "Noble House",
+        "img": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/19/79/45/ed/noble-house-restaurant.jpg?w=800&h=-1&s=1"
+      },
+      {
+        "name": "Saigon Restaurant & Lounge",
+        "img": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/16/e4/af/1e/saigon-restaurant.jpg?w=800&h=600&s=1"
+      },
+      {
+        "name": "The Blue Restaurant & Grill",
+        "img": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/15/60/0c/5a/the-blue-restaurant-6.jpg?w=800&h=600&s=1"
+      }
+    ],
+    "Continent": "Africa",
+    "_createdOn": 1613551279012
+  },
+  "084bce75-3888-4905-aaf0-0b1d2546b062": {
+    "_ownerId": "4a14daf3-9b2c-4608-bad3-79340a4b0ce8",
+    "title": "Paris",
+    "description": "Paris has a reputation for being the ultimate romantic getaway. But what visitors really swoon over is the city itself. Those grand stone and wrought-iron buildings, the sidewalks brimming with cozy cafés, and the Seine’s curving riverbanks are downright cinematic. But the city’s charms go beyond looks. The culinary scene creates an endless list of must-eat French dishes—rich and hearty coq au vin, golden buttery croissants. It’s also worth trying modern fusion and inventive international food here. And the spirit of Paris invites ducking down side streets, lingering in museums, and exploring mazes of shops. At the end of the day, head to the Champ-de-Mars to get uninterrupted views of the Eiffel Tower as it glitters into the night.",
+    "img": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1b/4b/59/86/caption.jpg?w=1000&h=500&s=1",
+    "Do": [
+      {
+        "name": "Eiffel Tower",
+        "img": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1a/9e/7f/9d/eiffeltoren.jpg?w=800&h=600&s=1"
+      },
+      {
+        "name": "Louvre Museum",
+        "img": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/22/4f/70/dc/cour-napoleon-et-pyramide.jpg?w=800&h=600&s=1"
+      },
+      {
+        "name": "Arc de Triomphe",
+        "img": "hhttps://dynamic-media-cdn.tripadvisor.com/media/photo-o/0a/f0/d0/9b/arc-de-triomphe-at-night.jpg?w=800&h=600&s=1"
+      }
+    ],
+    "Stay": [
+      {
+        "name": "Le Bristol Paris",
+        "img": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/14/ec/1f/42/le-bristol-paris-colonnade.jpg?w=700&h=-1&s=1"
+      },
+      {
+        "name": "La Réserve Paris - Hotel and Spa",
+        "img": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1d/41/79/70/detail.jpg?w=800&h=600&s=1"
+      },
+      {
+        "name": "Four Seasons Hotel George V",
+        "img": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/28/69/f5/21/four-seasons-hotel-george.jpg?w=800&h=600&s=1"
+      }
+    ],
+    "Eat": [
+      {
+        "name": "Verjus",
+        "img": "https://dynamic-media-cdn.tripadvisor.com/media/photo-s/03/2b/5a/36/verjus.jpg?w=600&h=500&s=1"
+      },
+      {
+        "name": "114 Faubourg",
+        "img": "https://dynamic-media-cdn.tripadvisor.com/media/daodao/photo-s/0b/41/3a/72/caption.jpg?w=600&h=500&s=1"
+      },
+      {
+        "name": "Frenchie - Rue du Nil",
+        "img": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/16/68/8b/57/frenchie.jpg?w=800&h=-1&s=1"
+      }
+    ],
+    "Continent": "Europe",
+    "_createdOn": 1613551279012
+  },
+  "3ff5e943-e2a4-4bc8-ad81-3dba3745b3b2": {
+    "_ownerId": "4a14daf3-9b2c-4608-bad3-79340a4b0ce8",
+    "title": "Rome",
+    "description": "All roads lead to Rome, so they say. Or maybe it should be all interests. Food lovers can spend a lifetime sampling the city’s pasta—impossibly buttery cacio e pepe, rich and meaty carbonara. Art fanatics can tour masterpiece after masterpiece by the likes of Michelangelo and Raphael. And history buffs can explore an absurd amount of ancient sites, from the Pantheon to the Colosseum to the Trevi Fountain. But just when you think you have Rome figured out, it surprises you. Just look at its nightlife, which rivals any European capital with its up-all-night energy and legendary clubbing. And even if your bar-crawl days are behind you, it’s worth joining locals in the Roman tradition of an aperitivo (pre-dinner drink) to toast this eternal city.",
+    "img": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0f/3e/f4/f0/photo2jpg.jpg?w=2200&h=-1&s=1",
+    "Do": [
+      {
+        "name": "Colosseum",
+        "img": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/15/f0/6b/18/gita-fuori-porta-avevo.jpg?w=800&h=600&s=1"
+      },
+      {
+        "name": "Pantheon",
+        "img": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/26/7f/2e/84/pantheon.jpg?w=700&h=-1&s=1"
+      },
+      {
+        "name": "Trevi Fountain",
+        "img": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1d/84/4b/ec/caption.jpg?w=800&h=-1&s=1"
+      }
+    ],
+    "Stay": [
+      {
+        "name": "Hotel Eden",
+        "img": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/10/24/2a/61/photo2jpg.jpg?w=800&h=-1&s=1"
+      },
+      {
+        "name": "Portrait Roma",
+        "img": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/28/6b/09/d7/terrace-with-view-over.jpg?w=800&h=600&s=1"
+      },
+      {
+        "name": "Elizabeth Unique Hotel",
+        "img": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1a/1b/8a/13/suite.jpg?w=800&h=600&s=1"
+      }
+    ],
+    "Eat": [
+      {
+        "name": "Antico Arco",
+        "img": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1a/c0/da/f5/photo0jpg.jpg?w=800&h=600&s=1"
+      },
+      {
+        "name": "Trapizzino Testaccio",
+        "img": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/13/58/58/48/trapizzino-con-coda-alla.jpg?w=800&h=600&s=1"
+      },
+      {
+        "name": "Roscioli",
+        "img": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/17/9f/ae/cb/a-multi-functional-deli.jpg?w=800&h=600&s=1"
+      }
+    ],
+    "Continent": "Europe",
+    "_createdOn": 1613551279012
+  },
+  "e8f9b82b-daf8-4d65-baa6-4ec7fec9a4f0": {
+    "_ownerId": "c0a36a43-9309-4161-ad33-e9652609088e",
+    "title": "Barcelona",
+    "description": "There’s nowhere in the world like Barcelona. From days spent strolling the Gothic Quarter to afternoons at the beach and nights partying ‘til dawn, the city is magnetic. While tapas and bustling mercados are worth every bit of attention they get in guidebooks, Barcelona’s true crown jewel is the work of Antoni Gaudí. His iconic creations, like the jaw-dropping Basilica of La Sagrada Familia, are instantly recognizable and have fueled millions of travel dreams. You won’t be the only tourist here (especially during the summer), but even amid the crowds you’ll find your own Mediterranean magic any time of year.",
+    "img": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/28/6a/f4/2a/caption.jpg?w=1400&h=-1&s=1",
+    "Do": [
+      {
+        "name": "Basílica de la Sagrada Familia",
+        "img": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/09/c2/7b/99/caption.jpg?w=800&h=600&s=1"
+      },
+      {
+        "name": "Mercat de la Boqueria",
+        "img": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1a/39/24/62/mercat-de-la-boqueria.jpg?w=800&h=-1&s=1"
+      },
+      {
+        "name": "Casa Milà - La Pedrera",
+        "img": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/17/24/c3/9a/chimney-with-character.jpg?w=800&h=600&s=1"
+      }
+    ],
+    "Stay": [
+      {
+        "name": "Margot House Hotel",
+        "img": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1d/42/d5/81/margot-house.jpg?w=800&h=600&s=1"
+      },
+      {
+        "name": "Serras Barcelona",
+        "img": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/15/37/a3/13/hotel-the-serras.jpg?w=800&h=600&s=1"
+      },
+      {
+        "name": "Casa Camper Hotel Barcelona",
+        "img": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/14/8c/b4/d0/guest-room.jpg?w=800&h=600&s=1"
+      }
+    ],
+    "Eat": [
+      {
+        "name": "Bodega Lito",
+        "img": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0b/5a/b6/eb/overpriced-fine-tapas.jpg?w=800&h=600&s=1"
+      },
+      {
+        "name": "ABaC",
+        "img": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/12/21/56/48/platos-abac-restaurant.jpg?w=800&h=600&s=1"
+      },
+      {
+        "name": "Bodega Biarritz 1881",
+        "img": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/04/17/ed/13/bodega-biarritz-1881.jpg?w=600&h=500&s=1"
+      }
+    ],
+    "Continent": "Europe",
+    "_createdOn": 1613551279012
+  },
+  "81e98ca8-b06a-4892-a04c-e33dda924abc": {
+    "_ownerId": "ac34823a-18a1-4026-893e-0a836978f96e",
+    "title": "Singapore",
+    "description": "This tiny island city-state is a study of fusions and contrasts bursting with wonders waiting to be explored. Tranquil parks abut futuristic skyscrapers and luxe shopping malls. A thriving street food scene and world-class restaurants offer countless ways to taste and sip your way through Singapore’s culinary melting pot. Your first trip to Singapore will prove that sometimes the best things come in small packages.",
+    "img": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1b/4b/60/00/caption.jpg?w=1400&h=-1&s=1",
+    "Do": [
+      {
+        "name": "Singapore Botanic Gardens",
+        "img": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/11/7f/e5/ce/beautiful-botanic-gardens.jpg?w=700&h=600&s=1"
+      },
+      {
+        "name": "Haw Par Villa",
+        "img": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/13/2a/ac/5a/tiger-balm-gardens.jpg?w=800&h=600&s=1"
+      },
+      {
+        "name": "ArtScience Museum at Marina Bay Sands",
+        "img": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/12/0e/00/0b/singapore-art-science.jpg?w=800&h=600&s=1"
+      }
+    ],
+    "Stay": [
+      {
+        "name": "Marina Bay Sands",
+        "img": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/26/e2/3e/fb/marina-bay-sands-hotel.jpg?w=800&h=600&s=1"
+      },
+      {
+        "name": "The Fullerton Bay Hotel Singapore",
+        "img": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/06/7e/23/08/the-fullerton-bay-hotel.jpg?w=800&h=600&s=1"
+      },
+      {
+        "name": "Shangri-La Singapore",
+        "img": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/12/be/2f/c4/lobby.jpg?w=800&h=600&s=1"
+      }
+    ],
+    "Eat": [
+      {
+        "name": "Odette",
+        "img": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/16/b2/55/62/quadruple-banquette.jpg?w=800&h=600&s=1"
+      },
+      {
+        "name": "Burnt Ends",
+        "img": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0a/ff/73/bb/small-plates.jpg?w=800&h=600&s=1"
+      },
+      {
+        "name": "KENG ENG KEE SEAFOOD",
+        "img": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/05/17/c2/fa/keng-eng-kee-seafood.jpg?w=800&h=600&s=1"
+      }
+    ],
+    "Continent": "Asia",
+    "_createdOn": 1613551279012
+  },
+  "3bfbd7fc-aad4-4c18-b9be-407ee2ba50fe": {
+    "_ownerId": "ac34823a-18a1-4026-893e-0a836978f96e",
+    "title": "Kyoto",
+    "description": "The shrines and temples of Kyoto offer a rare link between modern life in the city and its very ancient past. The Shimogamo Shrine dates to the 6th century and seems suspended in time, its serenity and spiritual power still palpable. Visit Fushimi Inari Shrine, then see the life-sized Thousand Armed Kannon statues of Sanjūsangen-dō. Take in traditional geisha performances, then savor a tranquil meal at a restaurant overlooking the Kamo River.",
+    "img": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/15/43/75/21/photo0jpg.jpg?w=1400&h=-1&s=1&cx=1174&cy=615&chk=v1_a1e899f38a9e60afd918",
+    "Do": [
+      {
+        "name": "Fushimi Inari-taisha Shrine",
+        "img": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1c/18/28/2e/if-you-make-a-wish-when.jpg?w=800&h=600&s=1"
+      },
+      {
+        "name": "Kinkakuji Temple",
+        "img": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/15/43/75/21/photo0jpg.jpg?w=800&h=600&s=1&cx=1174&cy=615&chk=v1_a1e899f38a9e60afd918"
+      },
+      {
+        "name": "Eikando Zenrinji Temple",
+        "img": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/14/65/f9/24/you-can-also-enjoy-the.jpg?w=800&h=600&s=1"
+      }
+    ],
+    "Stay": [
+      {
+        "name": "Luck You Kyoto",
+        "img": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0b/fe/8c/32/caption.jpg?w=800&h=600&s=1"
+      },
+      {
+        "name": "Cross Hotel Kyoto",
+        "img": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/15/03/03/15/hotel-garden.jpg?w=800&h=600&s=1"
+      },
+      {
+        "name": "Hotel Nikko Princess Kyoto",
+        "img": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1b/c7/fa/52/restaurant.jpg?w=800&h=600&s=1"
+      }
+    ],
+    "Eat": [
+      {
+        "name": "Nanzenji Junsei",
+        "img": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/12/cd/73/fc/caption.jpg?w=800&h=600&s=1"
+      },
+      {
+        "name": "Kikunoi",
+        "img": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/18/64/c5/60/photo0jpg.jpg?w=800&h=-1&s=1"
+      },
+      {
+        "name": "Tajimaya Shijo Kawaramachi",
+        "img": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/13/d3/b3/7e/caption.jpg?w=700&h=500&s=1"
+      }
+    ],
+    "Continent": "Asia",
+    "_createdOn": 1613551279012
+  },
+  "725ff76b-d535-4ed7-b60c-0cdb7dde8da6": {
+    "_ownerId": "ac34823a-18a1-4026-893e-0a836978f96e",
+    "title": "Bangkok",
+    "description": "There are cities and then there is Bangkok. Temples like Wat Pho are thronged with devotees all day. Street food sizzles all evening. The heat never stops. And the nightlife—from sleazy Patpong to ritzy rooftop bars—is second to none. But the pleasures don’t end there. Night markets, mega malls, and the massive Chatuchak Weekend Market all make Bangkok a shoppers’ (and souvenir-hunter’s) dream. You’ll need to prepare yourself—Bangkok is intense. But for travelers craving local secrets and 24/7 energy, there’s nowhere in the world quite like it.",
+    "img": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/09/1a/2b/83/wat-arun-tempel-der-morgenrote.jpg?w=2000&h=-1&s=1",
+    "Do": [
+      {
+        "name": "Chatuchak Weekend Market",
+        "img": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/12/56/c6/14/dsc-2066-largejpg.jpg?w=800&h=600&s=1"
+      },
+      {
+        "name": "Wat Phra Chetuphon",
+        "img": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/07/fa/67/3c/temple-of-the-reclining.jpg?w=800&h=600&s=1"
+      },
+      {
+        "name": "Jim Thompson House",
+        "img": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/18/f3/f2/f8/outside.jpg?w=800&h=-1&s=1"
+      }
+    ],
+    "Stay": [
+      {
+        "name": "The Siam",
+        "img": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/23/e1/b7/0a/thesiam-mainresidence.jpg?w=800&h=-1&s=1"
+      },
+      {
+        "name": "The Okura Prestige Bangkok",
+        "img": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/26/9d/77/2a/lobby-day-with-kimono.jpg?w=800&h=-1&s=1"
+      },
+      {
+        "name": "Hotel Muse Bangkok Langsuan, MGallery Collection",
+        "img": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1b/05/58/a0/hotel-muse-bangkok.jpg?w=800&h=-1&s=1"
+      }
+    ],
+    "Eat": [
+      {
+        "name": "Nai Mong Hoi Thod",
+        "img": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/17/ac/3c/47/20190526-151929-largejpg.jpg?w=800&h=-1&s=1"
+      },
+      {
+        "name": "Saawaan",
+        "img": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/19/80/5b/8e/open-chefs-kitchen.jpg?w=800&h=-1&s=1"
+      },
+      {
+        "name": "Mae Varee Fruit Shop",
+        "img": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/17/f4/cf/77/photo1jpg.jpg?w=800&h=-1&s=1"
+      }
+    ],
+    "Continent": "Asia",
+    "_createdOn": 1613551279012
+  }
+}
