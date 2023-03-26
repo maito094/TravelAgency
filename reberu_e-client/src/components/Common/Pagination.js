@@ -39,24 +39,24 @@ export const Pagination = ({ onPaginateHandler, countTopics }) => {
             Previous
           </a>
         </li>
-        {1 <= pageIndex && (
+        {0 <= pageIndex && (
           <li className={`page-item ${styles['li-index']}`}>
             <a className="page-link the1" href="#">
-              {pageIndex}
-            </a>
-          </li>
-        )}
-        {countTopics > pageIndex && (
-          <li className={`page-item ${styles['li-index']}`}>
-            <a className="page-link the2" href="#">
               {pageIndex + 1}
             </a>
           </li>
         )}
         {countTopics - 3 > pageIndex && (
           <li className={`page-item ${styles['li-index']}`}>
-            <a className="page-link the3" href="#">
+            <a className="page-link the2" href="#">
               {pageIndex + 2}
+            </a>
+          </li>
+        )}
+        {countTopics - 4 > pageIndex && (
+          <li className={`page-item ${styles['li-index']}`}>
+            <a className="page-link the3" href="#">
+              {pageIndex + 3}
             </a>
           </li>
         )}
