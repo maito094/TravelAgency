@@ -1,26 +1,99 @@
-import { Routes, Route } from 'react-router-dom';
+import { Routes, Route, useNavigate } from 'react-router-dom';
 
 import { Header } from './components/Header/Header';
 import { Login } from './components/Login/Login';
 import { Register } from './components/Register/Register';
 import { LandingPage } from './components/LandingPage/LandingPage';
-import {CreateTopic} from './components/Blog/CreateTopic';
+import { CreateTopic } from './components/Blog/CreateTopic';
 import { Footer } from './components/Footer/Footer';
 import { Blog } from './components/Blog/Blog';
+import { useEffect, useState } from 'react';
+import { blogServiceFactory } from './services/blogService';
+import { authServiceFactory } from './services/authService';
+import { BlogEntries } from './components/Blog/BlogEntries';
+import { AuthContext } from './contexts/AuthContext';
 
 function App() {
+  const navigate = useNavigate();
+
+  const [blog, setBlog] = useState([]);
+  const [auth, setAuth] = useState({});
+  const blogService = blogServiceFactory(auth.accessToken);
+  const authService = authServiceFactory(auth.accessToken);
+
+  //   useEffect(() => {
+  //     blogService.getOne())
+  //         .then(result => {
+  //             setBlog(result)
+  //         })
+  // }, []);
+
+  const getRecentBlog = (blogId) => {
+    blogService.getOne(blogId).then((result) => {
+      setBlog(result);
+    });
+  };
+
+  const onLoginSubmit = async (data) => {
+    try {
+      const result = await authService.login(data);
+
+      setAuth(result);
+
+      navigate('/blogs');
+    } catch (error) {
+      console.log('There is a problem');
+    }
+  };
+
+  const onRegisterSubmit = async (values) => {
+    const { confirmPassword, ...registerData } = values;
+    if (confirmPassword !== registerData.password) {
+      return;
+    }
+
+    try {
+      const result = await authService.register(registerData);
+
+      setAuth(result);
+
+      navigate('/blogs');
+    } catch (error) {
+      console.log('There is a problem');
+    }
+  };
+
+  const onLogout = async () => {
+    await authService.logout();
+
+    setAuth({});
+  };
+
+  const contextValues = {
+    onLoginSubmit,
+    onRegisterSubmit,
+    onLogout,
+    userId: auth._id,
+    token: auth.accessToken,
+    userEmail: auth.email,
+    isAuthenticated: !!auth.accessToken,
+  };
+
   return (
-    <div className="tm-main-content" id="top">
-      <Header />
-      <Routes>
-        <Route path="/" element={<LandingPage />} />
-        <Route path="/login" element={<Login />} />
-        <Route path="/register" element={<Register />} />
-        <Route path="/create-topic" element={<CreateTopic />} />
-        <Route path="/blogs" element={<Blog />} />
-      </Routes>
-      <Footer />
-    </div>
+    <AuthContext.Provider value={contextValues}>
+      <div className="tm-main-content" id="top">
+        <Header />
+        <Routes>
+          <Route path="/" element={<LandingPage />} />
+          <Route path="/login" element={<Login />} />
+          <Route path="/register" element={<Register />} />
+          <Route path="/create-topic" element={<CreateTopic />} />
+          <Route path="/blogs" element={<Blog />} />
+          <Route path="/blogs/:blogId" element={<BlogEntries />} />
+        </Routes>
+        <Footer />
+      </div>
+    </AuthContext.Provider>
   );
 }
 
