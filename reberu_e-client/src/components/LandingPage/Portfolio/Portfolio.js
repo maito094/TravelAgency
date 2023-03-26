@@ -15,7 +15,7 @@ export const  Portfolio = () =>{
         <div className="tm-section tm-section-pad tm-bg-gray" id="tm-section-4">
         <div className="container">
           <div className="row">
-            <div className="col-sm-12 col-md-12 col-lg-8 col-xl-8">
+            <div className="col-sm-12 col-md-12 col-lg-5 col-xl-5">
               <div className="tm-article-carousel">
                 <Article {...propsTest}/>
                 <Article {...propsTest}/>

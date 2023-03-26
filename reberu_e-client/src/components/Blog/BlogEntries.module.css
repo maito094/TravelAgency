@@ -1,0 +1,34 @@
+.blogCard{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-between;
+    align-self: flex-start ;
+    max-width: 240px;
+    max-height: auto;
+    min-width: 120px;
+    min-height: auto;
+    overflow: hidden;
+}
+
+.img-card{
+    
+    object-fit: cover;
+    max-width: 240px;
+    max-height: auto;
+}
+
+
+
+
+/* @media screen and (max-width: 900px) {
+
+    .blogCard{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: col;
+        flex-shrink: 1;
+        justify-content: space-between;
+        overflow: hidden;
+    }
+} */
