@@ -5,6 +5,7 @@ import { SearchBar } from '../SearchBar/SearchBar';
 import { VideoSection } from '../Common/VideoSection';
 import { PolygonSection } from '../Common/PolygonSection';
 import { BlogEntries } from '../Blog/BlogEntries';
+import { useEffect, useState } from 'react';
 
 const Newletters = {
   title: 'We are here to help you?',
@@ -13,7 +14,22 @@ const Newletters = {
   btnMsg: 'Subscribe Newletters',
 };
 
+const baseUrl = 'http://localhost:3030/data/topic';
+
+
 export const LandingPage = () => {
+
+
+  const [initialBlogEntry, setInitialBlogEntry] = useState(null);
+
+  useEffect(() => {
+    fetch(`${baseUrl}?_createdOn%20desc`)
+      .then((res) => res.json())
+      .then((result) => {
+        console.log(Object.values(result)[0]);
+        setInitialBlogEntry(Object.values(result)[0]);
+      });
+  }, []);
 
   return (
     <div>
@@ -22,7 +38,7 @@ export const LandingPage = () => {
       <InfoSection />
       <Portfolio />
       <VideoSection />
-      <BlogEntries />
+      <BlogEntries blog={initialBlogEntry} />
       <Contacts />
     </div>
   );

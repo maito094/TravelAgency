@@ -4,6 +4,7 @@ import { PolygonSection } from '../Common/PolygonSection';
 import { Article } from '../Common/Article';
 
 import styles from './Blog.module.css';
+import { BlogEntries } from './BlogEntries';
 
 const baseUrl = 'http://localhost:3030/data/topic';
 
@@ -14,32 +15,28 @@ const BlogCreation = {
   btnMsg: 'Create a Topic',
 };
 
-
 export const Blog = () => {
   const [article, setArticle] = useState([]);
-const [countTopics, setCountTopics] = useState(0);
+  const [countTopics, setCountTopics] = useState(0);
 
-  const countTopicsHandler = ()=>{
+  const countTopicsHandler = () => {
     fetch(`${baseUrl}?count`)
-    .then((res) => res.json())
-    .then((result) => {
-      setCountTopics(result);
-    });
-    
-  }
-const  onPaginateHandler = async(offset, size) => {
-  const sizeTest = 3;
+      .then((res) => res.json())
+      .then((result) => {
+        setCountTopics(result);
+      });
+  };
+  const onPaginateHandler = async (offset, size) => {
+    const sizeTest = 3;
 
-   countTopicsHandler();
+    countTopicsHandler();
 
-
-  fetch(`${baseUrl}?offset=${offset}&pageSize=${sizeTest}`)
-    .then((res) => res.json())
-    .then((result) => {
-      setArticle(Object.values(result));
-    });
-    
-};
+    fetch(`${baseUrl}?offset=${offset}&pageSize=${sizeTest}`)
+      .then((res) => res.json())
+      .then((result) => {
+        setArticle(Object.values(result));
+      });
+  };
 
   return (
     <div>
@@ -55,10 +52,11 @@ const  onPaginateHandler = async(offset, size) => {
       <div className={styles['flex-articles']}>
         {article.map((x) => (
           <div key={x._id} className={styles['cardItem']}>
-            <Article dest={baseUrl} {...x} />
+            <Article dest={'/blogs'} {...x} />
           </div>
         ))}
       </div>
+      <BlogEntries blog={article[0]}/>
     </div>
   );
 };
