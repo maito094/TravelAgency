@@ -4,8 +4,6 @@ import styles from './Pagination.module.css';
 export const Pagination = ({ onPaginateHandler, countTopics }) => {
   const [pageIndex, setPageIndex] = useState(0);
 
-  // const pageCount = Math.ceil(countTopics / 3);
-
   useEffect(() => {
     onPaginateHandler(pageIndex);
   }, [pageIndex]);
@@ -41,21 +39,21 @@ export const Pagination = ({ onPaginateHandler, countTopics }) => {
         </li>
         {0 <= pageIndex && (
           <li className={`page-item ${styles['li-index']}`}>
-            <a className="page-link the1" href="#">
+            <a className="page-link" href="#">
               {pageIndex + 1}
             </a>
           </li>
         )}
         {countTopics - 3 > pageIndex && (
           <li className={`page-item ${styles['li-index']}`}>
-            <a className="page-link the2" href="#">
+            <a className="page-link" href="#">
               {pageIndex + 2}
             </a>
           </li>
         )}
         {countTopics - 4 > pageIndex && (
           <li className={`page-item ${styles['li-index']}`}>
-            <a className="page-link the3" href="#">
+            <a className="page-link" href="#">
               {pageIndex + 3}
             </a>
           </li>
