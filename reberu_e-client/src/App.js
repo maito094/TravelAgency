@@ -12,6 +12,7 @@ import { blogServiceFactory } from './services/blogService';
 import { authServiceFactory } from './services/authService';
 import { BlogEntries } from './components/Blog/BlogEntries';
 import { AuthContext } from './contexts/AuthContext';
+import { Logout } from './components/Logout/Logout';
 
 function App() {
   const navigate = useNavigate();
@@ -42,18 +43,20 @@ function App() {
 
       navigate('/blogs');
     } catch (error) {
-      console.log('There is a problem');
+      alert('There is a problem. Try Login agin or check if email & password is correct');
     }
   };
 
   const onRegisterSubmit = async (values) => {
-    const { confirmPassword, ...registerData } = values;
-    if (confirmPassword !== registerData.password) {
-      return;
-    }
+
+    // const { confirmPassword, ...registerData } = values;
+
+    // if (confirmPassword !== registerData.password) {
+    //   return;
+    // }
 
     try {
-      const result = await authService.register(registerData);
+      const result = await authService.register(values);
 
       setAuth(result);
 
@@ -86,6 +89,7 @@ function App() {
         <Routes>
           <Route path="/" element={<LandingPage />} />
           <Route path="/login" element={<Login />} />
+          <Route path='/logout' element={<Logout />} />
           <Route path="/register" element={<Register />} />
           <Route path="/create-topic" element={<CreateTopic />} />
           <Route path="/blogs" element={<Blog />} />

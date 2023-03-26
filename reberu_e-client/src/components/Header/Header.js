@@ -1,22 +1,25 @@
-import { Link } from "react-router-dom";
+import { useContext } from 'react';
 
-export const Header = ()=>{
+import { Link } from 'react-router-dom';
 
-  const showCollapseMenu =(e)=>{
+import { AuthContext } from '../../contexts/AuthContext';
 
-    let navbar = e.currentTarget.parentNode.querySelector("#mainNav");
+export const Header = () => {
 
-    if (navbar.classList.contains("collapse")) {
-      
-      navbar.classList.remove("collapse");
+  const { isAuthenticated, userEmail } = useContext(AuthContext);
+
+
+  const showCollapseMenu = (e) => {
+    let navbar = e.currentTarget.parentNode.querySelector('#mainNav');
+
+    if (navbar.classList.contains('collapse')) {
+      navbar.classList.remove('collapse');
+    } else {
+      navbar.classList.add('collapse');
     }
-    else{
-      navbar.classList.add("collapse");
+  };
 
-    }
-  }
-
-    return   ( 
+  return (
     <div className="tm-top-bar" id="tm-top-bar">
       <div className="container">
         <div className="row">
@@ -26,7 +29,7 @@ export const Header = ()=>{
               Level
             </Link>
             <button
-            onClick={showCollapseMenu}
+              onClick={showCollapseMenu}
               type="button"
               id="nav-toggle"
               className="navbar-toggler collapsed"
@@ -54,16 +57,32 @@ export const Header = ()=>{
                     Blog Entries
                   </Link>
                 </li>
-                <li className="nav-item">
-                  <Link className="nav-link" to="/contact-us">
-                    Contact Us
-                  </Link>
-                </li>
+                {!isAuthenticated && (
+                  <li className="nav-item">
+                    <Link className="nav-link" to="/login">
+                      Login
+                    </Link>
+                  </li>
+                )}
+                {!isAuthenticated && (
+                  <li className="nav-item">
+                    <Link className="nav-link" to="/register">
+                      Register
+                    </Link>
+                  </li>
+                )}
+                {isAuthenticated && (
+                  <li className="nav-item">
+                    <Link className="nav-link" to="/logout">
+                      Logout
+                    </Link>
+                  </li>
+                )}
               </ul>
             </div>
           </nav>
         </div>
       </div>
     </div>
-    );
+  );
 };
