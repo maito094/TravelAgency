@@ -135,7 +135,13 @@ p {
 	height: 515px;
 }
 
-#tm-section-5 { background-image: url('../img/bg-img-2.jpg'); }
+h2.text-uppercase.tm-section-title-2{
+	color: #ee5057;
+}
+
+h3.tm-color-primary.tm-font-semibold.tm-section-subtitle-2{
+	color: wheat;
+}
 
 #tm-section-6 {
 	background-image: url('../img/bg-img-3.jpg');

@@ -6,15 +6,15 @@ import { VideoSection } from '../Common/VideoSection';
 import { PolygonSection } from '../Common/PolygonSection';
 import { BlogEntries } from '../Blog/BlogEntries';
 
-
-const Newletters ={
-  title:'We are here to help you?',
-  subtitle:'Subscribe to get our newsletters',
-  path:'/',
-  btnMsg:'Subscribe Newletters'
-}
+const Newletters = {
+  title: 'We are here to help you?',
+  subtitle: 'Subscribe to get our newsletters',
+  path: '/',
+  btnMsg: 'Subscribe Newletters',
+};
 
 export const LandingPage = () => {
+
   return (
     <div>
       <SearchBar />
