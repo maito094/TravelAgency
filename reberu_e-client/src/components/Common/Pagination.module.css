@@ -1,0 +1,15 @@
+.paginationSection{
+   
+    max-width: 100%;
+    max-height: 250px;
+}
+
+
+.ul-nav{
+    margin-top: 120px;
+    justify-content: center;
+}
+
+.li-index{
+    color: rgb(161, 54, 59);
+}

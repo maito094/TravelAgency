@@ -1,0 +1,18 @@
+.flex-articles{
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    flex-grow: 1;
+    flex-shrink: 1;
+    justify-content: space-between;
+    
+
+
+}
+
+.cardItem{
+    background-color: red;
+    max-height: 860px;
+    max-width: 360px;
+}
