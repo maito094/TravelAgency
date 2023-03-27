@@ -38,6 +38,7 @@ Project Content - Navigation
 |---
 | [Web-client Site Map](#SiteMap)
 | [Components](#Components)
+| [Collections](#Collections)
 | [Services](#Services)
 | [Hooks](#Hooks)
 | [Context](#Context)
@@ -116,6 +117,10 @@ Leading to Register page
 
 
 ### Footer
+
+___
+
+## Collections
 
 ___
 
