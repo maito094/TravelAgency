@@ -72,6 +72,14 @@ function App() {
     setAuth({});
   };
 
+  const onCreateTopicSubmit = async (data) => {
+    const newTopic = await blogService.create(data);
+
+    setBlog(state => [...state, newTopic]);
+
+    navigate('/blogs');
+};
+
   const contextValues = {
     onLoginSubmit,
     onRegisterSubmit,
@@ -91,7 +99,7 @@ function App() {
           <Route path="/login" element={<Login />} />
           <Route path='/logout' element={<Logout />} />
           <Route path="/register" element={<Register />} />
-          <Route path="/create-topic" element={<CreateTopic />} />
+          <Route path="/create-topic" element={<CreateTopic onCreateTopicSubmit={onCreateTopicSubmit} />} />
           <Route path="/blogs" element={<Blog />} />
           <Route path="/blogs/:blogId" element={<BlogEntries />} />
         </Routes>
