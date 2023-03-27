@@ -11,7 +11,7 @@ const baseUrl = 'http://localhost:3030/data/topic';
 const BlogCreation = {
   title: 'Share about your favorite place!',
   subtitle: 'Tell us the insight information',
-  path: '/',
+  path: '/create-topic',
   btnMsg: 'Create a Topic',
 };
 

@@ -54,7 +54,7 @@ export const Header = () => {
                 </li>
                 <li className="nav-item">
                   <Link className="nav-link" to="/blogs">
-                    Blog Entries
+                    Blog
                   </Link>
                 </li>
                 {!isAuthenticated && (
