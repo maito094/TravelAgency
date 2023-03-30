@@ -4,7 +4,7 @@ export const useInput = (initialValues) => {
     const [values, setValues] = useState(initialValues);
 
     const changeHandler = (e) => {
-        setValues(state => ({...state, [e.target.name]: e.target.value.name}));
+        setValues(state => ({...state, [e.target.name]: e.target.value}));
     };
 
     return {
