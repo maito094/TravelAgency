@@ -1,29 +1,7 @@
-import { FormInput } from '../Common/FormInput';
 import { useState } from 'react';
-import { useService } from '../../hooks/useService';
 import { useForm } from '../../hooks/useForm';
 
 export const CreateTopic = ({ onCreateTopicSubmit }) => {
-  let [doObj, setDoObj] = useState([
-    {
-      name: '',
-      img: '',
-    },
-  ]);
-
-  let [stayObj, setStayObj] = useState([
-    {
-      name: '',
-      img: '',
-    },
-  ]);
-
-  let [eatObj, setEatObj] = useState([
-    {
-      name: '',
-      img: '',
-    },
-  ]);
   const { values, changeHandler } = useForm({
     title: '',
     description: '',
@@ -31,19 +9,63 @@ export const CreateTopic = ({ onCreateTopicSubmit }) => {
     continent: '',
   });
 
+  let [Do, setDo] = useState({
+    1: {
+      name: '',
+      img: '',
+    },
+  });
 
-  const Do = {};
-  const Stay = {};
-  const Eat = {};
+  let [Stay, setStay] = useState({
+    1: {
+      name: '',
+      img: '',
+    },
+  });
+
+  let [Eat, setEat] = useState({
+    1: {
+      name: '',
+      img: '',
+    },
+  });
+
+  const onChangeDoInputHandler = (e, index) => {
+    setDo((state) => {
+      let copy = { ...state };
+
+      copy[index][e.target.name] = e.target.value;
+
+      return copy;
+    });
+  };
+
+  const onChangeStayInputHandler = (e, index) => {
+    setStay((state) => {
+      let copy = { ...state };
+
+      copy[index][e.target.name] = e.target.value;
+
+      return copy;
+    });
+  };
+
+  const onChangeEatInputHandler = (e, index) => {
+    setEat((state) => {
+      let copy = { ...state };
+
+      copy[index][e.target.name] = e.target.value;
+
+      return copy;
+    });
+  };
 
   const onSubmit = (e) => {
     e.preventDefault();
 
-
-
-    console.log(doObj);
-    console.log(stayObj);
-    console.log(eatObj);
+    //console.log(doObj);
+    // console.log(stayObj);
+    // console.log(eatObj);
     // TODO - Add data from InputForm and useForm together
     // and compose whole the data to send and create Topic
     // Object.assign(doObj);
@@ -61,29 +83,59 @@ export const CreateTopic = ({ onCreateTopicSubmit }) => {
 
     if (e) {
       let id = e.target.getAttribute('id');
-      if (id === 'todoBtn' && doObj.length < 4) {
-        let doObjCurrent = {
-          name: '',
-          img: '',
+      let doCounts = Object.keys(Do).length;
+      let stayCounts = Object.keys(Stay).length;
+      let eatCounts = Object.keys(Eat).length;
+      if (id === 'todoBtn' && doCounts < 4) {
+        const increment = doCounts + 1;
+
+        let ObjCurrent = {
+          [increment]: {
+            name: '',
+            img: '',
+          },
         };
-        setDoObj((x) => [...x, doObjCurrent]);
-        console.log(doObj);
+
+        setDo((state) => {
+          let copy = { ...state };
+
+          Object.assign(copy, ObjCurrent);
+          return copy;
+        });
       }
-      if (id === 'tostayBtn' && stayObj.length < 4) {
-        let stayObjCurrent = {
-          name: '',
-          img: '',
+      if (id === 'tostayBtn' && stayCounts < 4) {
+        const increment = stayCounts + 1;
+
+        let ObjCurrent = {
+          [increment]: {
+            name: '',
+            img: '',
+          },
         };
-        setStayObj((x) => [...x, stayObjCurrent]);
-        console.log(stayObj);
+
+        setStay((state) => {
+          let copy = { ...state };
+
+          Object.assign(copy, ObjCurrent);
+          return copy;
+        });
       }
-      if (id === 'toeatBtn' && eatObj.length < 4) {
-        let eatObjCurrent = {
-          name: '',
-          img: '',
+      if (id === 'toeatBtn' && eatCounts < 4) {
+        const increment = eatCounts + 1;
+
+        let ObjCurrent = {
+          [increment]: {
+            name: '',
+            img: '',
+          },
         };
-        setEatObj((x) => [...x, eatObjCurrent]);
-        console.log(eatObj);
+
+        setEat((state) => {
+          let copy = { ...state };
+
+          Object.assign(copy, ObjCurrent);
+          return copy;
+        });
       }
     }
   };
@@ -97,7 +149,7 @@ export const CreateTopic = ({ onCreateTopicSubmit }) => {
       <h1 className="tm-color-white">
         Please fill all the necessary fields and create a Topic of the places you've been to and share it with the World!
       </h1>
-      <div className="container ie-h-align-center-fix">
+      <div style={{ overflow: 'scroll', height: '90vh', marginTop: '240px' }} className="container ie-h-align-center-fix">
         <div className="tm-bg-white tm-p-4">
           <form onSubmit={onSubmit} method="post" className="contact-form">
             <div className="form-group">
@@ -155,80 +207,105 @@ export const CreateTopic = ({ onCreateTopicSubmit }) => {
             <div onClick={onClick} style={{ display: 'flex', flexDirection: 'column', alignItems: 'flex-start' }}>
               <button id="todoBtn">TO DO +</button>
 
-              {doObj.map(
+              {Object.entries(Do).map(
                 (singleField, index) =>
                   index > 0 && (
                     <div className="test" key={index}>
-                      <FormInput
-                        id={index}
-                        label={'Name'}
-                        labelValue={'Name'}
-                        type={'text'}
-                        name={'name'}
-                        // onChange={useInput} // TO DO USE HERE TO PASS SETDATA HANDLER, SO THERE IS ACCESS TO STATE COMPONENT INPUT DATA ! ! !
-                        initValue={singleField.name}
-                      />
-                      <FormInput
-                        id={index}
-                        label={'Image'}
-                        labelValue={'Image'}
-                        type={'text'}
-                        name={'img'}
-                        // onChange={useInput}
-                        initValue={singleField.img}
-                      />
+                      <div className="form-group">
+                        <label htmlFor="name">Name:</label>
+                        <input
+                          type="text"
+                          id={`name` + index}
+                          name="name"
+                          className="form-control"
+                          placeholder=""
+                          required
+                          value={Do[index]['name']}
+                          onChange={(e) => onChangeDoInputHandler(e, index)}
+                        />
+                      </div>
+                      <div className="form-group">
+                        <label htmlFor="img">Image:</label>
+                        <input
+                          type="text"
+                          id={`img` + index}
+                          name="img"
+                          className="form-control"
+                          placeholder=""
+                          required
+                          value={Do[index]['img']}
+                          onChange={(e) => onChangeDoInputHandler(e, index)}
+                        />
+                      </div>
                     </div>
                   )
               )}
               <button id="tostayBtn">TO STAY +</button>
-              {stayObj.map(
+              {Object.entries(Stay).map(
                 (singleField, index) =>
                   index > 0 && (
                     <div className="test" key={index}>
-                      <FormInput
-                        id={index}
-                        label={'Name'}
-                        labelValue={'Name'}
-                        type={'text'}
-                        name={'name'}
-                        // onChange={useInput}
-                        initValue={singleField.name}
-                      />
-                      <FormInput
-                        id={index}
-                        label={'Image'}
-                        labelValue={'Image'}
-                        type={'text'}
-                        name={'img'}
-                        // onChange={useInput}
-                        initValue={singleField.img}
-                      />
+                      <div className="form-group">
+                        <label htmlFor="name">Name:</label>
+                        <input
+                          type="text"
+                          id={`name` + index}
+                          name="name"
+                          className="form-control"
+                          placeholder=""
+                          required
+                          value={Stay[index]['name']}
+                          onChange={(e) => onChangeStayInputHandler(e, index)}
+                        />
+                      </div>
+                      <div className="form-group">
+                        <label htmlFor="img">Image:</label>
+                        <input
+                          type="text"
+                          id={`img` + index}
+                          name="img"
+                          className="form-control"
+                          placeholder=""
+                          required
+                          value={Stay[index]['img']}
+                          onChange={(e) => onChangeStayInputHandler(e, index)}
+                        />
+                      </div>
                     </div>
                   )
               )}
+
               <button id="toeatBtn">TO EAT +</button>
-              {eatObj.map(
+              {Object.entries(Eat).map(
                 (singleField, index) =>
                   index > 0 && (
                     <div className="test" key={index}>
-                      <FormInput
-                        id={index}
-                        label={'Name'}
-                        labelValue={'Name'}
-                        type={'text'}
-                        name={'name'}
-                        // onChange={useInput}
-                        initValue={singleField.name}
-                      />
-                      <FormInput
-                        id={index}
-                        label={'Image'}
-                        labelValue={'Image'}
-                        type={'text'}
-                        name={'img'}
-                        // onChange={useInput}
-                        initValue={singleField.img}
-                      />
+                      <div className="form-group">
+                        <label htmlFor="name">Name:</label>
+                        <input
+                          type="text"
+                          id={`name` + index}
+                          name="name"
+                          className="form-control"
+                          placeholder=""
+                          required
+                          value={Eat[index]['name']}
+                          onChange={(e) => onChangeEatInputHandler(e, index)}
+                        />
+                      </div>
+                      <div className="form-group">
+                        <label htmlFor="img">Image:</label>
+                        <input
+                          type="text"
+                          id={`img` + index}
+                          name="img"
+                          className="form-control"
+                          placeholder=""
+                          required
+                          value={Eat[index]['img']}
+                          onChange={(e) => onChangeEatInputHandler(e, index)}
+                        />
+                      </div>
                     </div>
                   )
               )}
