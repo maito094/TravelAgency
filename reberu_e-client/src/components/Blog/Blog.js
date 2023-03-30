@@ -1,10 +1,11 @@
-import { useEffect, useState } from 'react';
+import { useContext, useEffect, useState } from 'react';
 import { Pagination } from '../Common/Pagination';
 import { PolygonSection } from '../Common/PolygonSection';
 import { Article } from '../Common/Article';
 
 import styles from './Blog.module.css';
 import { BlogEntries } from './BlogEntries';
+import { AuthContext } from '../../contexts/AuthContext';
 
 const baseUrl = 'http://localhost:3030/data/topic';
 
@@ -16,8 +17,16 @@ const BlogCreation = {
 };
 
 export const Blog = () => {
+
+  const { isAuthenticated } = useContext(AuthContext);
+
   const [article, setArticle] = useState([]);
   const [countTopics, setCountTopics] = useState(0);
+
+
+  if (!isAuthenticated) {
+    BlogCreation.path='/login';
+  }
 
   const countTopicsHandler = () => {
     fetch(`${baseUrl}?count`)
