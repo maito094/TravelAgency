@@ -17,16 +17,12 @@ const BlogCreation = {
 };
 
 export const Blog = () => {
-
   const { isAuthenticated } = useContext(AuthContext);
 
   const [article, setArticle] = useState([]);
   const [countTopics, setCountTopics] = useState(0);
 
-
-  if (!isAuthenticated) {
-    BlogCreation.path='/login';
-  }
+  BlogCreation.path = isAuthenticated ? '/create-topic' : '/login';
 
   const countTopicsHandler = () => {
     fetch(`${baseUrl}?count`)
@@ -65,7 +61,7 @@ export const Blog = () => {
           </div>
         ))}
       </div>
-      <BlogEntries blog={article[0]}/>
+      <BlogEntries blog={article[0]} />
     </div>
   );
 };
