@@ -48,7 +48,6 @@ function App() {
   };
 
   const onRegisterSubmit = async (values) => {
-
     // const { confirmPassword, ...registerData } = values;
 
     // if (confirmPassword !== registerData.password) {
@@ -75,10 +74,10 @@ function App() {
   const onCreateTopicSubmit = async (data) => {
     const newTopic = await blogService.create(data);
 
-    setBlog(state => [...state, newTopic]);
+    setBlog((state) => [...state, newTopic]);
 
     navigate('/blogs');
-};
+  };
 
   const contextValues = {
     onLoginSubmit,
@@ -97,9 +96,11 @@ function App() {
         <Routes>
           <Route path="/" element={<LandingPage />} />
           <Route path="/login" element={<Login />} />
-          <Route path='/logout' element={<Logout />} />
+          <Route path="/logout" element={<Logout />} />
           <Route path="/register" element={<Register />} />
-          <Route path="/create-topic" element={<CreateTopic onCreateTopicSubmit={onCreateTopicSubmit} />} />
+          {contextValues.isAuthenticated ? (
+            <Route path="/create-topic" element={<CreateTopic onCreateTopicSubmit={onCreateTopicSubmit} />} />
+          ) : <Route path="/create-topic" element={<Login />} />}
           <Route path="/blogs" element={<Blog />} />
           <Route path="/blogs/:blogId" element={<BlogEntries />} />
         </Routes>
