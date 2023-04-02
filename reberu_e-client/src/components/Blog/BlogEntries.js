@@ -1,23 +1,36 @@
-import { useEffect, useState } from 'react';
+import { useContext, useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import { blogServiceFactory } from '../../services/blogService';
 import { BlogCard } from './BlogCard';
 import { useService } from '../../hooks/useService';
 import { CommentSection } from '../Common/CommentSection';
+import { AuthContext } from '../../contexts/AuthContext';
+import { Link } from 'react-router-dom';
 
 const baseUrl = 'http://localhost:3030/data/topic';
 
-export const BlogEntries = ({ blog }) => {
+export const BlogEntries = ({ blog, onDeleteHandler }) => {
   const { blogId } = useParams();
   const [blogEntry, setBlog] = useState({});
   const [comments, setComments] = useState([]);
   const blogService = useService(blogServiceFactory);
+  const {  userId,
+           token,
+           userEmail,
+            } = useContext(AuthContext);
+
 
   const onBlogDetailsLoadComment = (blogId) => {
     blogService.getAllBlogComments(blogId).then((result) => {
       setComments(result);
     });
   };
+
+
+  const onDelete = (e) => {
+    e.preventDefault();
+    onDeleteHandler(blogId);
+  }
 
   useEffect(() => {
     if (blogId) {
@@ -41,7 +54,7 @@ export const BlogEntries = ({ blog }) => {
       >
         <div className="row tm-flex-align-center tm-media-body-v-center">
           <div className="col-xs-12 col-md-12 col-lg-9 col-xl-9 tm-media-title-container">
-            <h2 className="text-uppercase tm-section-title-2">{blogEntry?.Continent ?? ''}</h2>
+            <h2 className="text-uppercase tm-section-title-2">{blogEntry?.continent ?? ''}</h2>
             <h3 className="tm-color-primary tm-font-semibold tm-section-subtitle-2">{blogEntry?.title ?? ''}</h3>
           </div>
           <div className=" mt-0 mt-sm-3 ">
@@ -84,7 +97,11 @@ export const BlogEntries = ({ blog }) => {
           </div>
         </div>
       </div>
-      {blogId &&  <CommentSection comments={comments} />}
+      {blogId && blogEntry?._ownerId===userId && <div style={{textAlign:'center', margin:'20px 0px'}}>
+       <button className='link btn-info' ><Link  to={`/edit-topic/${blogId}`}  style={{ display:'block', lineHeight:'77px', width:'100%', color:'white' }} id="editBtn">Edit</Link></button>
+        <button style={{ textDecoration:'none' }}  className='link btn-danger' onClick={onDelete} id="deleteBtn">Delete</button>
+      </div> }
+      {blogId &&  <CommentSection comments={comments} blogId={blogId}/>}
     </div>
   );
 };
