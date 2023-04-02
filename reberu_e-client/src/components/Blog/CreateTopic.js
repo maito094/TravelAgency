@@ -10,29 +10,29 @@ export const CreateTopic = ({ onCreateTopicSubmit }) => {
   });
 
   let [Do, setDo] = useState({
-    1: {
-      name: '',
-      img: '',
-    },
+    // 1: {
+    //   name: '',
+    //   img: '',
+    // },
   });
 
   let [Stay, setStay] = useState({
-    1: {
-      name: '',
-      img: '',
-    },
+    // 1: {
+    //   name: '',
+    //   img: '',
+    // },
   });
 
   let [Eat, setEat] = useState({
-    1: {
-      name: '',
-      img: '',
-    },
+    // 1: {
+    //   name: '',
+    //   img: '',
+    // },
   });
 
   const onChangeDoInputHandler = (e, index) => {
     setDo((state) => {
-      let copy = { ...state };
+      let copy ={ ...state };
 
       copy[index][e.target.name] = e.target.value;
 
@@ -63,14 +63,42 @@ export const CreateTopic = ({ onCreateTopicSubmit }) => {
   const onSubmit = (e) => {
     e.preventDefault();
 
-    //console.log(doObj);
+    // console.log(doObj);
     // console.log(stayObj);
     // console.log(eatObj);
     // TODO - Add data from InputForm and useForm together
     // and compose whole the data to send and create Topic
-    // Object.assign(doObj);
+    if (!!Do) {
+      for (const [key, val] of Object.entries(Do)) {
+        if (values.Do !== undefined) {
+          Object.assign(values.Do, { [key]: val });
+          continue;
+        }
+        Object.assign(values, { Do: { [key]: val } });
+      }
+    }
+    if (!!Stay) {
+      for (const [key, val] of Object.entries(Stay)) {
+        if (values.Stay !== undefined) {
+          Object.assign(values.Stay, { [key]: val });
+          continue;
+        }
+        Object.assign(values, { Stay: { [key]: val } });
+      }
+    }
+    if (!!Eat) {
+      for (const [key, val] of Object.entries(Eat)) {
+        if (values.Eat !== undefined) {
+          Object.assign(values.Eat, { [key]: val });
+          continue;
+        }
+        Object.assign(values, { Eat: { [key]: val } });
+      }
+    }
+
     console.log(values);
-    //onCreateTopicSubmit(values);
+
+    // onCreateTopicSubmit(values);
   };
 
   const onClick = (e) => {
@@ -170,7 +198,7 @@ export const CreateTopic = ({ onCreateTopicSubmit }) => {
               <input
                 value={values.description}
                 onChange={changeHandler}
-                type="email"
+                type="text"
                 id="description"
                 name="description"
                 className="form-control"
@@ -209,32 +237,32 @@ export const CreateTopic = ({ onCreateTopicSubmit }) => {
 
               {Object.entries(Do).map(
                 (singleField, index) =>
-                  index > 0 && (
-                    <div className="test" key={index}>
+                Object.keys(Do).length > 0 && (
+                    <div className="test" key={index+1}>
                       <div className="form-group">
                         <label htmlFor="name">Name:</label>
                         <input
                           type="text"
-                          id={`name` + index}
+                          id={`name` + Number(index+1)}
                           name="name"
                           className="form-control"
                           placeholder=""
                           required
-                          value={Do[index]['name']}
-                          onChange={(e) => onChangeDoInputHandler(e, index)}
+                          value={Do[index+1]['name']}
+                          onChange={(e) => onChangeDoInputHandler(e, index+1)}
                         />
                       </div>
                       <div className="form-group">
                         <label htmlFor="img">Image:</label>
                         <input
                           type="text"
-                          id={`img` + index}
+                          id={`img` + Number(index+1)}
                           name="img"
                           className="form-control"
                           placeholder=""
                           required
-                          value={Do[index]['img']}
-                          onChange={(e) => onChangeDoInputHandler(e, index)}
+                          value={Do[index+1]['img']}
+                          onChange={(e) => onChangeDoInputHandler(e, index+1)}
                         />
                       </div>
                     </div>
@@ -243,32 +271,32 @@ export const CreateTopic = ({ onCreateTopicSubmit }) => {
               <button id="tostayBtn">TO STAY +</button>
               {Object.entries(Stay).map(
                 (singleField, index) =>
-                  index > 0 && (
-                    <div className="test" key={index}>
+                  Object.keys(Stay).length > 0 && (
+                    <div className="test" key={index+1}>
                       <div className="form-group">
                         <label htmlFor="name">Name:</label>
                         <input
                           type="text"
-                          id={`name` + index}
+                          id={`name` + Number(index+1)}
                           name="name"
                           className="form-control"
                           placeholder=""
                           required
-                          value={Stay[index]['name']}
-                          onChange={(e) => onChangeStayInputHandler(e, index)}
+                          value={Stay[index+1]['name']}
+                          onChange={(e) => onChangeStayInputHandler(e, index+1)}
                         />
                       </div>
                       <div className="form-group">
                         <label htmlFor="img">Image:</label>
                         <input
                           type="text"
-                          id={`img` + index}
+                          id={`img` + Number(index+1)}
                           name="img"
                           className="form-control"
                           placeholder=""
                           required
-                          value={Stay[index]['img']}
-                          onChange={(e) => onChangeStayInputHandler(e, index)}
+                          value={Stay[index+1]['img']}
+                          onChange={(e) => onChangeStayInputHandler(e, index+1)}
                         />
                       </div>
                     </div>
@@ -278,32 +306,32 @@ export const CreateTopic = ({ onCreateTopicSubmit }) => {
               <button id="toeatBtn">TO EAT +</button>
               {Object.entries(Eat).map(
                 (singleField, index) =>
-                  index > 0 && (
-                    <div className="test" key={index}>
+                Object.keys(Eat).length > 0 && (
+                    <div className="test" key={index+1}>
                       <div className="form-group">
                         <label htmlFor="name">Name:</label>
                         <input
                           type="text"
-                          id={`name` + index}
+                          id={`name` + Number(index+1)}
                           name="name"
                           className="form-control"
                           placeholder=""
                           required
-                          value={Eat[index]['name']}
-                          onChange={(e) => onChangeEatInputHandler(e, index)}
+                          value={Eat[index+1]['name']}
+                          onChange={(e) => onChangeEatInputHandler(e, index+1)}
                         />
                       </div>
                       <div className="form-group">
                         <label htmlFor="img">Image:</label>
                         <input
                           type="text"
-                          id={`img` + index}
+                          id={`img` + Number(index+1)}
                           name="img"
                           className="form-control"
                           placeholder=""
                           required
-                          value={Eat[index]['img']}
-                          onChange={(e) => onChangeEatInputHandler(e, index)}
+                          value={Eat[index+1]['img']}
+                          onChange={(e) => onChangeEatInputHandler(e, index+1)}
                         />
                       </div>
                     </div>
