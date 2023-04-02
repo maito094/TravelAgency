@@ -9,26 +9,11 @@ export const CreateTopic = ({ onCreateTopicSubmit }) => {
     continent: '',
   });
 
-  let [Do, setDo] = useState({
-    // 1: {
-    //   name: '',
-    //   img: '',
-    // },
-  });
+  let [Do, setDo] = useState({});
 
-  let [Stay, setStay] = useState({
-    // 1: {
-    //   name: '',
-    //   img: '',
-    // },
-  });
+  let [Stay, setStay] = useState({});
 
-  let [Eat, setEat] = useState({
-    // 1: {
-    //   name: '',
-    //   img: '',
-    // },
-  });
+  let [Eat, setEat] = useState({});
 
   const onChangeDoInputHandler = (e, index) => {
     setDo((state) => {
@@ -63,11 +48,6 @@ export const CreateTopic = ({ onCreateTopicSubmit }) => {
   const onSubmit = (e) => {
     e.preventDefault();
 
-    // console.log(doObj);
-    // console.log(stayObj);
-    // console.log(eatObj);
-    // TODO - Add data from InputForm and useForm together
-    // and compose whole the data to send and create Topic
     if (!!Do && Object.keys(Do).length > 0) {
       values.Do = Object.values(Do);
     }
@@ -78,11 +58,7 @@ export const CreateTopic = ({ onCreateTopicSubmit }) => {
       values.Eat = Object.values(Eat);
     }
 
-    console.log(values);
-
-    // onCreateTopicSubmit(values);
-
-    // Redirect to Topic Details
+    onCreateTopicSubmit(values);
   };
 
   const onClick = (e) => {
