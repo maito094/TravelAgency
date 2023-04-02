@@ -29,6 +29,12 @@ export const BlogEntries = ({ blog, onDeleteHandler }) => {
     setComments((c) => [...c, result]);
   };
 
+  const onDeleteComment = async (commentId) => {
+    const result = await commentService.delete(commentId);
+
+    setComments((c) => c.filter((x) => x._id !== commentId));
+  };
+
   const onDelete = (e) => {
     e.preventDefault();
     onDeleteHandler(blogId);
@@ -111,7 +117,14 @@ export const BlogEntries = ({ blog, onDeleteHandler }) => {
           </button>
         </div>
       )}
-      {blogId && <CommentSection comments={comments} blogId={blogId} onSubmitCommentHandler={onSubmitCommentHandler} />}
+      {blogId && (
+        <CommentSection
+          comments={comments}
+          blogId={blogId}
+          onSubmitCommentHandler={onSubmitCommentHandler}
+          onDeleteComment={onDeleteComment}
+        />
+      )}
     </div>
   );
 };

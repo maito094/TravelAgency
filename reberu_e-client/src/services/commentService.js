@@ -20,7 +20,7 @@ export const commentServiceFactory = (token) => {
   };
 
   const edit = async (data, commentId) => {};
-  const deleteComment = async (commentId) => {};
+  const deleteComment = async (commentId) => request.delete(`${baseUrl}/${commentId}`);
 
   return {
     getAll,
