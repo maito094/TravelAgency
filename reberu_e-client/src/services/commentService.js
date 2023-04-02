@@ -19,7 +19,7 @@ export const commentServiceFactory = (token) => {
     return result;
   };
 
-  const edit = async (data,commentId) => {};
+  const edit = async (data, commentId) => {};
   const deleteComment = async (commentId) => {};
 
   return {

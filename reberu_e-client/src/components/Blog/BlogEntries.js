@@ -16,11 +16,7 @@ export const BlogEntries = ({ blog, onDeleteHandler }) => {
   const [comments, setComments] = useState([]);
   const blogService = useService(blogServiceFactory);
   const commentService = useService(commentServiceFactory);
-  const {  userId,
-           token,
-           userEmail,
-            } = useContext(AuthContext);
-
+  const { userId, token, userEmail } = useContext(AuthContext);
 
   const onBlogDetailsLoadComment = (blogId) => {
     commentService.getAll(blogId).then((result) => {
@@ -28,11 +24,15 @@ export const BlogEntries = ({ blog, onDeleteHandler }) => {
     });
   };
 
+  const onSubmitCommentHandler = async (data) => {
+    const result = await commentService.addComment(data);
+    setComments((c) => [...c, result]);
+  };
 
   const onDelete = (e) => {
     e.preventDefault();
     onDeleteHandler(blogId);
-  }
+  };
 
   useEffect(() => {
     if (blogId) {
@@ -99,11 +99,19 @@ export const BlogEntries = ({ blog, onDeleteHandler }) => {
           </div>
         </div>
       </div>
-      {blogId && blogEntry?._ownerId===userId && <div style={{textAlign:'center', margin:'20px 0px'}}>
-       <button className='link btn-info' ><Link  to={`/edit-topic/${blogId}`}  style={{ display:'block', lineHeight:'77px', width:'100%', color:'white' }} id="editBtn">Edit</Link></button>
-        <button style={{ textDecoration:'none' }}  className='link btn-danger' onClick={onDelete} id="deleteBtn">Delete</button>
-      </div> }
-      {blogId &&  <CommentSection comments={comments} blogId={blogId}/>}
+      {blogId && blogEntry?._ownerId === userId && (
+        <div style={{ textAlign: 'center', margin: '20px 0px' }}>
+          <button className="link btn-info">
+            <Link to={`/edit-topic/${blogId}`} style={{ display: 'block', lineHeight: '77px', width: '100%', color: 'white' }} id="editBtn">
+              Edit
+            </Link>
+          </button>
+          <button style={{ textDecoration: 'none' }} className="link btn-danger" onClick={onDelete} id="deleteBtn">
+            Delete
+          </button>
+        </div>
+      )}
+      {blogId && <CommentSection comments={comments} blogId={blogId} onSubmitCommentHandler={onSubmitCommentHandler} />}
     </div>
   );
 };
