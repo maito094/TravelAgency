@@ -32,7 +32,7 @@ export const CreateTopic = ({ onCreateTopicSubmit }) => {
 
   const onChangeDoInputHandler = (e, index) => {
     setDo((state) => {
-      let copy ={ ...state };
+      let copy = { ...state };
 
       copy[index][e.target.name] = e.target.value;
 
@@ -68,37 +68,21 @@ export const CreateTopic = ({ onCreateTopicSubmit }) => {
     // console.log(eatObj);
     // TODO - Add data from InputForm and useForm together
     // and compose whole the data to send and create Topic
-    if (!!Do) {
-      for (const [key, val] of Object.entries(Do)) {
-        if (values.Do !== undefined) {
-          Object.assign(values.Do, { [key]: val });
-          continue;
-        }
-        Object.assign(values, { Do: { [key]: val } });
-      }
+    if (!!Do && Object.keys(Do).length > 0) {
+      values.Do = Object.values(Do);
     }
-    if (!!Stay) {
-      for (const [key, val] of Object.entries(Stay)) {
-        if (values.Stay !== undefined) {
-          Object.assign(values.Stay, { [key]: val });
-          continue;
-        }
-        Object.assign(values, { Stay: { [key]: val } });
-      }
+    if (!!Stay && Object.keys(Stay).length > 0) {
+      values.Stay = Object.values(Stay);
     }
-    if (!!Eat) {
-      for (const [key, val] of Object.entries(Eat)) {
-        if (values.Eat !== undefined) {
-          Object.assign(values.Eat, { [key]: val });
-          continue;
-        }
-        Object.assign(values, { Eat: { [key]: val } });
-      }
+    if (!!Eat && Object.keys(Eat).length > 0) {
+      values.Eat = Object.values(Eat);
     }
 
     console.log(values);
 
     // onCreateTopicSubmit(values);
+
+    // Redirect to Topic Details
   };
 
   const onClick = (e) => {
@@ -237,32 +221,32 @@ export const CreateTopic = ({ onCreateTopicSubmit }) => {
 
               {Object.entries(Do).map(
                 (singleField, index) =>
-                Object.keys(Do).length > 0 && (
-                    <div className="test" key={index+1}>
+                  Object.keys(Do).length > 0 && (
+                    <div className="test" key={index + 1}>
                       <div className="form-group">
                         <label htmlFor="name">Name:</label>
                         <input
                           type="text"
-                          id={`name` + Number(index+1)}
+                          id={`name` + Number(index + 1)}
                           name="name"
                           className="form-control"
                           placeholder=""
                           required
-                          value={Do[index+1]['name']}
-                          onChange={(e) => onChangeDoInputHandler(e, index+1)}
+                          value={Do[index + 1]['name']}
+                          onChange={(e) => onChangeDoInputHandler(e, index + 1)}
                         />
                       </div>
                       <div className="form-group">
                         <label htmlFor="img">Image:</label>
                         <input
                           type="text"
-                          id={`img` + Number(index+1)}
+                          id={`img` + Number(index + 1)}
                           name="img"
                           className="form-control"
                           placeholder=""
                           required
-                          value={Do[index+1]['img']}
-                          onChange={(e) => onChangeDoInputHandler(e, index+1)}
+                          value={Do[index + 1]['img']}
+                          onChange={(e) => onChangeDoInputHandler(e, index + 1)}
                         />
                       </div>
                     </div>
@@ -272,31 +256,31 @@ export const CreateTopic = ({ onCreateTopicSubmit }) => {
               {Object.entries(Stay).map(
                 (singleField, index) =>
                   Object.keys(Stay).length > 0 && (
-                    <div className="test" key={index+1}>
+                    <div className="test" key={index + 1}>
                       <div className="form-group">
                         <label htmlFor="name">Name:</label>
                         <input
                           type="text"
-                          id={`name` + Number(index+1)}
+                          id={`name` + Number(index + 1)}
                           name="name"
                           className="form-control"
                           placeholder=""
                           required
-                          value={Stay[index+1]['name']}
-                          onChange={(e) => onChangeStayInputHandler(e, index+1)}
+                          value={Stay[index + 1]['name']}
+                          onChange={(e) => onChangeStayInputHandler(e, index + 1)}
                         />
                       </div>
                       <div className="form-group">
                         <label htmlFor="img">Image:</label>
                         <input
                           type="text"
-                          id={`img` + Number(index+1)}
+                          id={`img` + Number(index + 1)}
                           name="img"
                           className="form-control"
                           placeholder=""
                           required
-                          value={Stay[index+1]['img']}
-                          onChange={(e) => onChangeStayInputHandler(e, index+1)}
+                          value={Stay[index + 1]['img']}
+                          onChange={(e) => onChangeStayInputHandler(e, index + 1)}
                         />
                       </div>
                     </div>
@@ -306,32 +290,32 @@ export const CreateTopic = ({ onCreateTopicSubmit }) => {
               <button id="toeatBtn">TO EAT +</button>
               {Object.entries(Eat).map(
                 (singleField, index) =>
-                Object.keys(Eat).length > 0 && (
-                    <div className="test" key={index+1}>
+                  Object.keys(Eat).length > 0 && (
+                    <div className="test" key={index + 1}>
                       <div className="form-group">
                         <label htmlFor="name">Name:</label>
                         <input
                           type="text"
-                          id={`name` + Number(index+1)}
+                          id={`name` + Number(index + 1)}
                           name="name"
                           className="form-control"
                           placeholder=""
                           required
-                          value={Eat[index+1]['name']}
-                          onChange={(e) => onChangeEatInputHandler(e, index+1)}
+                          value={Eat[index + 1]['name']}
+                          onChange={(e) => onChangeEatInputHandler(e, index + 1)}
                         />
                       </div>
                       <div className="form-group">
                         <label htmlFor="img">Image:</label>
                         <input
                           type="text"
-                          id={`img` + Number(index+1)}
+                          id={`img` + Number(index + 1)}
                           name="img"
                           className="form-control"
                           placeholder=""
                           required
-                          value={Eat[index+1]['img']}
-                          onChange={(e) => onChangeEatInputHandler(e, index+1)}
+                          value={Eat[index + 1]['img']}
+                          onChange={(e) => onChangeEatInputHandler(e, index + 1)}
                         />
                       </div>
                     </div>
