@@ -1,6 +1,7 @@
 import { useContext, useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import { blogServiceFactory } from '../../services/blogService';
+import { commentServiceFactory } from '../../services/commentService';
 import { BlogCard } from './BlogCard';
 import { useService } from '../../hooks/useService';
 import { CommentSection } from '../Common/CommentSection';
@@ -14,6 +15,7 @@ export const BlogEntries = ({ blog, onDeleteHandler }) => {
   const [blogEntry, setBlog] = useState({});
   const [comments, setComments] = useState([]);
   const blogService = useService(blogServiceFactory);
+  const commentService = useService(commentServiceFactory);
   const {  userId,
            token,
            userEmail,
@@ -21,7 +23,7 @@ export const BlogEntries = ({ blog, onDeleteHandler }) => {
 
 
   const onBlogDetailsLoadComment = (blogId) => {
-    blogService.getAllBlogComments(blogId).then((result) => {
+    commentService.getAll(blogId).then((result) => {
       setComments(result);
     });
   };
