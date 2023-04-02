@@ -46,7 +46,7 @@
         "img": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1a/c6/fa/0e/img-20191224-163138-largejpg.jpg?w=800&h=-1&s=1"
       }
     ],
-    "Continent": "North America",
+    "continent": "North America",
     "_createdOn": 1613551279012
   },
   "35f08930-d99f-436f-b6ce-505e1b1aae7b": {
@@ -96,7 +96,7 @@
         "img": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/12/e8/75/c3/massimo-s-italian-fallsview.jpg?w=800&h=600&s=1"
       }
     ],
-    "Continent": "North America",
+    "continent": "North America",
     "_createdOn": 1613551279012
   },
   "1a0ef8a5-371d-40fe-9a53-0a68527b9b3c": {
@@ -146,7 +146,7 @@
         "img": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/15/2f/3e/74/molletes-con-tocino-pidelos.jpg?w=800&h=600&s=1"
       }
     ],
-    "Continent": "North America",
+    "continent": "North America",
     "_createdOn": 1613551279012
   },
   "4d7ca8d3-06ea-41da-85a6-b34e703f6515": {
@@ -196,7 +196,7 @@
         "img": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/07/0a/87/c9/libzar.jpg?w=800&h=600&s=1"
       }
     ],
-    "Continent": "Africa",
+    "continent": "Africa",
     "_createdOn": 1613551279012
   },
   "237d75ad-53e4-4414-9e95-7d477af60e6d": {
@@ -246,7 +246,7 @@
         "img": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/03/c7/a6/26/beer-garden.jpg?w=800&h=600&s=1"
       }
     ],
-    "Continent": "Africa",
+    "continent": "Africa",
     "_createdOn": 1613551279012
   },
   "a4760425-e7d2-47aa-a77b-bd1f43c6128e": {
@@ -296,7 +296,7 @@
         "img": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/15/60/0c/5a/the-blue-restaurant-6.jpg?w=800&h=600&s=1"
       }
     ],
-    "Continent": "Africa",
+    "continent": "Africa",
     "_createdOn": 1613551279012
   },
   "084bce75-3888-4905-aaf0-0b1d2546b062": {
@@ -315,7 +315,7 @@
       },
       {
         "name": "Arc de Triomphe",
-        "img": "hhttps://dynamic-media-cdn.tripadvisor.com/media/photo-o/0a/f0/d0/9b/arc-de-triomphe-at-night.jpg?w=800&h=600&s=1"
+        "img": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0a/f0/d0/9b/arc-de-triomphe-at-night.jpg?w=800&h=600&s=1"
       }
     ],
     "Stay": [
@@ -346,7 +346,7 @@
         "img": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/16/68/8b/57/frenchie.jpg?w=800&h=-1&s=1"
       }
     ],
-    "Continent": "Europe",
+    "continent": "Europe",
     "_createdOn": 1613551279012
   },
   "3ff5e943-e2a4-4bc8-ad81-3dba3745b3b2": {
@@ -396,7 +396,7 @@
         "img": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/17/9f/ae/cb/a-multi-functional-deli.jpg?w=800&h=600&s=1"
       }
     ],
-    "Continent": "Europe",
+    "continent": "Europe",
     "_createdOn": 1613551279012
   },
   "e8f9b82b-daf8-4d65-baa6-4ec7fec9a4f0": {
@@ -446,7 +446,7 @@
         "img": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/04/17/ed/13/bodega-biarritz-1881.jpg?w=600&h=500&s=1"
       }
     ],
-    "Continent": "Europe",
+    "continent": "Europe",
     "_createdOn": 1613551279012
   },
   "81e98ca8-b06a-4892-a04c-e33dda924abc": {
@@ -496,7 +496,7 @@
         "img": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/05/17/c2/fa/keng-eng-kee-seafood.jpg?w=800&h=600&s=1"
       }
     ],
-    "Continent": "Asia",
+    "continent": "Asia",
     "_createdOn": 1613551279012
   },
   "3bfbd7fc-aad4-4c18-b9be-407ee2ba50fe": {
@@ -546,7 +546,7 @@
         "img": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/13/d3/b3/7e/caption.jpg?w=700&h=500&s=1"
       }
     ],
-    "Continent": "Asia",
+    "continent": "Asia",
     "_createdOn": 1613551279012
   },
   "725ff76b-d535-4ed7-b60c-0cdb7dde8da6": {
@@ -596,7 +596,7 @@
         "img": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/17/f4/cf/77/photo1jpg.jpg?w=800&h=-1&s=1"
       }
     ],
-    "Continent": "Asia",
+    "continent": "Asia",
     "_createdOn": 1613551279012
   }
 }
