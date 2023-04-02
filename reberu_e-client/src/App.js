@@ -7,12 +7,13 @@ import { LandingPage } from './components/LandingPage/LandingPage';
 import { CreateTopic } from './components/Blog/CreateTopic';
 import { Footer } from './components/Footer/Footer';
 import { Blog } from './components/Blog/Blog';
-import { useEffect, useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { blogServiceFactory } from './services/blogService';
 import { authServiceFactory } from './services/authService';
 import { BlogEntries } from './components/Blog/BlogEntries';
 import { AuthContext } from './contexts/AuthContext';
 import { Logout } from './components/Logout/Logout';
+import { EditTopic } from './components/Blog/EditTopic';
 
 function App() {
   const navigate = useNavigate();
@@ -43,7 +44,7 @@ function App() {
 
       navigate('/blogs');
     } catch (error) {
-      alert('There is a problem. Try Login agin or check if email & password is correct');
+      alert('There is a problem. Try Login again or check if email & password is correct');
     }
   };
 
@@ -76,7 +77,21 @@ function App() {
 
     setBlog((state) => [...state, newTopic]);
 
-    navigate('/blogs');
+    navigate(`/blogs/${newTopic._id}`);
+  };
+
+  const onEditTopicSubmit = async (values) => {
+    const result = await blogService.edit(values._id, values);
+
+    setBlog((state) => state.map((x) => (x._id === values._id ? result : x)));
+
+    navigate(`/blogs/${values._id}`);
+  };
+
+  const onDeleteTopicSubmit = async (blogId) => {
+    await blogService.delete(blogId);
+
+    navigate(`/blogs`);
   };
 
   const contextValues = {
@@ -99,10 +114,15 @@ function App() {
           <Route path="/logout" element={<Logout />} />
           <Route path="/register" element={<Register />} />
           {contextValues.isAuthenticated ? (
-            <Route path="/create-topic" element={<CreateTopic onCreateTopicSubmit={onCreateTopicSubmit} />} />
-          ) : <Route path="/create-topic" element={<Login />} />}
+            <React.Fragment>
+              <Route path="/create-topic" element={<CreateTopic onCreateTopicSubmit={onCreateTopicSubmit} />} />
+              <Route path="/edit-topic/:blogId" element={<EditTopic onTopicEditHandler={onEditTopicSubmit} />} />
+            </React.Fragment>
+          ) : (
+            <Route path="/create-topic" element={<Login />} />
+          )}
           <Route path="/blogs" element={<Blog />} />
-          <Route path="/blogs/:blogId" element={<BlogEntries />} />
+          <Route path="/blogs/:blogId" element={<BlogEntries onDeleteHandler={onDeleteTopicSubmit} />} />
         </Routes>
         <Footer />
       </div>
