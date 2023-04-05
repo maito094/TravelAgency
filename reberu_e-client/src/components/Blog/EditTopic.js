@@ -7,42 +7,24 @@ import { useParams } from 'react-router-dom';
 export const EditTopic = ({ onTopicEditHandler }) => {
   const { blogId } = useParams();
 
-  const { values, changeHandler } = useForm({
+  const { values, changeHandler, changeValues } = useForm({
     title: '',
     description: '',
     img: '',
     continent: '',
   });
 
-  let [Do, setDo] = useState({
-    // 1: {
-    //   name: '',
-    //   img: '',
-    // },
-  });
+  let [Do, setDo] = useState({});
 
-  let [Stay, setStay] = useState({
-    // 1: {
-    //   name: '',
-    //   img: '',
-    // },
-  });
+  let [Stay, setStay] = useState({});
 
-  let [Eat, setEat] = useState({
-    // 1: {
-    //   name: '',
-    //   img: '',
-    // },
-  });
+  let [Eat, setEat] = useState({});
+
   const blogService = useService(blogServiceFactory);
 
   useEffect(() => {
     blogService.getOne(blogId).then((result) => {
-      values._id = result._id;
-      values.title = result.title;
-      values.description = result.description;
-      values.img = result.img;
-      values.continent = result.continent;
+      changeValues(result);
 
       if (!!result.Do && Object.keys(result.Do).length > 0) {
         setDo(Object.values(result.Do));
