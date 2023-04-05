@@ -8,7 +8,6 @@ import { CommentSection } from '../Common/CommentSection';
 import { AuthContext } from '../../contexts/AuthContext';
 import { Link } from 'react-router-dom';
 
-const baseUrl = 'http://localhost:3030/data/topic';
 
 export const BlogEntries = ({ blog, onDeleteHandler }) => {
   const { blogId } = useParams();
@@ -32,7 +31,7 @@ export const BlogEntries = ({ blog, onDeleteHandler }) => {
 
 
   const onDeleteComment = async (commentId) => {
-    const result = await commentService.delete(commentId);
+    await commentService.delete(commentId);
 
     setComments((c) => c.filter((x) => x._id !== commentId));
   };

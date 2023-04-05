@@ -26,7 +26,7 @@ export const Header = () => {
           <nav className="navbar navbar-expand-lg narbar-light">
             <Link className="navbar-brand mr-auto" to="/">
               <img src="img/logo.png" alt="Site logo" />
-              Level
+              ReberuE
             </Link>
             <button
               onClick={showCollapseMenu}

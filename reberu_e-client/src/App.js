@@ -23,13 +23,6 @@ function App() {
   const blogService = blogServiceFactory(auth.accessToken);
   const authService = authServiceFactory(auth.accessToken);
 
-  //   useEffect(() => {
-  //     blogService.getOne())
-  //         .then(result => {
-  //             setBlog(result)
-  //         })
-  // }, []);
-
   const getRecentBlog = (blogId) => {
     blogService.getOne(blogId).then((result) => {
       setBlog(result);
@@ -49,11 +42,6 @@ function App() {
   };
 
   const onRegisterSubmit = async (values) => {
-    // const { confirmPassword, ...registerData } = values;
-
-    // if (confirmPassword !== registerData.password) {
-    //   return;
-    // }
 
     try {
       const result = await authService.register(values);
