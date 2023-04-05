@@ -97,11 +97,11 @@ export const EditTopic = ({ onTopicEditHandler }) => {
       let doCounts = Object.keys(Do).length;
       let stayCounts = Object.keys(Stay).length;
       let eatCounts = Object.keys(Eat).length;
-      if (id === 'todoBtn' && doCounts < 4) {
+      if (id === 'todoBtn' && doCounts < 3) {
         const increment = doCounts + 1;
 
         let ObjCurrent = {
-          [increment]: {
+          [increment-1]: {
             name: '',
             img: '',
           },
@@ -114,11 +114,11 @@ export const EditTopic = ({ onTopicEditHandler }) => {
           return copy;
         });
       }
-      if (id === 'tostayBtn' && stayCounts < 4) {
+      if (id === 'tostayBtn' && stayCounts < 3) {
         const increment = stayCounts + 1;
 
         let ObjCurrent = {
-          [increment]: {
+          [increment-1]: {
             name: '',
             img: '',
           },
@@ -131,11 +131,11 @@ export const EditTopic = ({ onTopicEditHandler }) => {
           return copy;
         });
       }
-      if (id === 'toeatBtn' && eatCounts < 4) {
+      if (id === 'toeatBtn' && eatCounts < 3) {
         const increment = eatCounts + 1;
 
         let ObjCurrent = {
-          [increment]: {
+          [increment-1]: {
             name: '',
             img: '',
           },
