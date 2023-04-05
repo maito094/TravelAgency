@@ -14,6 +14,7 @@ export const BlogEntries = ({ blog, onDeleteHandler }) => {
   const { blogId } = useParams();
   const [blogEntry, setBlog] = useState({});
   const [comments, setComments] = useState([]);
+
   const blogService = useService(blogServiceFactory);
   const commentService = useService(commentServiceFactory);
   const { userId, token, userEmail } = useContext(AuthContext);
@@ -29,6 +30,7 @@ export const BlogEntries = ({ blog, onDeleteHandler }) => {
     setComments((c) => [...c, result]);
   };
 
+
   const onDeleteComment = async (commentId) => {
     const result = await commentService.delete(commentId);
 
@@ -42,6 +44,8 @@ export const BlogEntries = ({ blog, onDeleteHandler }) => {
 
   useEffect(() => {
     if (blogId) {
+
+      // Try PROMISE.ALL()
       blogService.getOne(blogId).then((result) => {
         setBlog(result);
       });

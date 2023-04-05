@@ -1,6 +1,6 @@
 import { Comment } from './Comment';
 import { AuthContext } from '../../contexts/AuthContext';
-import { useContext, useState } from 'react';
+import { useContext, useEffect, useState } from 'react';
 
 export const CommentSection = ({ comments, blogId, onSubmitCommentHandler, onDeleteComment }) => {
   const { userId, token, isAuthenticated, userEmail } = useContext(AuthContext);
@@ -10,11 +10,12 @@ export const CommentSection = ({ comments, blogId, onSubmitCommentHandler, onDel
     setPostComment((state) => e.target.value);
   };
 
+
   const onEnterKeyPress = (e) => {
     if (e.key === 'Enter') {
       e.preventDefault();
 
-      const commentObj = { _ownerId: userId, _ownerName: userEmail, content: postComment, _blogId: blogId, likes: 0 };
+      const commentObj = { _ownerId: userId, _ownerName: userEmail, content: postComment, _blogId: blogId, likes: [] };
 
       onSubmitCommentHandler(commentObj);
 
@@ -44,7 +45,12 @@ export const CommentSection = ({ comments, blogId, onSubmitCommentHandler, onDel
       )}
       <div style={{ justifyContent: 'space-evenly' }} className="d-flex flex-wrap py-2">
         {comments.map((x) => (
-          <Comment key={x._id} {...x} onDelete={onDeleteComment} isOwner={userId === x._ownerId} />
+          <Comment
+            key={x._id}
+            {...x}
+            onDelete={onDeleteComment}
+            userId={userId}
+          />
         ))}
       </div>
     </div>
