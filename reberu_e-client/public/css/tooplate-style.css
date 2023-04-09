@@ -5,9 +5,12 @@ Template 2095 Level
 http://www.tooplate.com/view/2095-level
 
 */
+*{
+	box-sizing: border-box;
+}
 html {
 	scroll-behavior: smooth;
-	box-sizing: border-box;
+
   }
 
 body {

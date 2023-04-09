@@ -12,9 +12,9 @@ export const Article =({
 
     return(
 
-        <article className={`tm-bg-white m-2 ${styles['flex-articles']}`}>
+        <article className={`tm-bg-white ${styles['flex-articles']}`}>
         <img src={img} alt="" className="img-fluid" />
-        <div className={`tm-article-pad ${styles['flex-articles']}`}>
+        <div className={`tm-article-pad ${styles['flex-articles-content']}`}>
           <header>
             <h3 className="text-uppercase tm-article-title-2">{title}</h3>
           </header>
